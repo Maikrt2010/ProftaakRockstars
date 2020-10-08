@@ -6,5 +6,9 @@ namespace Logic
 {
     class Article
     {
+        public Article()
+        {
+
+        }
     }
 }

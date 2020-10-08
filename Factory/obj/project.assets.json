@@ -24,29 +24,6 @@
         "runtime": {
           "bin/placeholder/DALInterfaces.dll": {}
         }
-      },
-      "Factory/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "DAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Factory.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Factory.dll": {}
-        }
-      },
-      "ViewInterfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/ViewInterfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ViewInterfaces.dll": {}
-        }
       }
     }
   },
@@ -60,23 +37,11 @@
       "type": "project",
       "path": "../Interfaces/DALInterfaces.csproj",
       "msbuildProject": "../Interfaces/DALInterfaces.csproj"
-    },
-    "Factory/1.0.0": {
-      "type": "project",
-      "path": "../Factory/Factory.csproj",
-      "msbuildProject": "../Factory/Factory.csproj"
-    },
-    "ViewInterfaces/1.0.0": {
-      "type": "project",
-      "path": "../ViewInterfaces/ViewInterfaces.csproj",
-      "msbuildProject": "../ViewInterfaces/ViewInterfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DALInterfaces >= 1.0.0",
-      "Factory >= 1.0.0",
-      "ViewInterfaces >= 1.0.0"
+      "DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -85,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Logic\\Logic.csproj",
-      "projectName": "Logic",
-      "projectPath": "D:\\repos\\ProftaakRockstars\\Logic\\Logic.csproj",
+      "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
+      "projectName": "Factory",
+      "projectPath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
       "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\ProftaakRockstars\\Logic\\obj\\",
+      "outputPath": "D:\\repos\\ProftaakRockstars\\Factory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,14 +70,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj": {
-              "projectPath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj"
-            },
-            "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj": {
-              "projectPath": "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj"
-            },
-            "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
-              "projectPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj"
+            "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj"
             }
           }
         }

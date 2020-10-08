@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {}
+    "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj": {}
   },
   "projects": {
-    "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {
+    "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
-        "projectName": "Front_ASP.NET",
-        "projectPath": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\obj\\",
+        "outputPath": "D:\\repos\\ProftaakRockstars\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
-                "projectPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj"
+              "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj": {
+                "projectPath": "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj"
               }
             }
           }
@@ -52,9 +52,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -63,14 +60,70 @@
         }
       }
     },
-    "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
+    "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
-        "projectName": "ViewInterfaces",
-        "projectPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
+        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
+        "projectName": "Factory",
+        "projectPath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
         "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\obj\\",
+        "outputPath": "D:\\repos\\ProftaakRockstars\\Factory\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj",
+        "projectName": "DALInterfaces",
+        "projectPath": "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj",
+        "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\ProftaakRockstars\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
