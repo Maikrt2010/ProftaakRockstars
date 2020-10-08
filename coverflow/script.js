@@ -80,18 +80,22 @@
       					"link": "http://twitter.com/",
 					},
 				],
-        width: window.innerWidth,
+        		width: window.innerWidth,
 				coverwidth: 180,
 				coverheight: 150,
 				fixedsize: true,
 				textoffset: 50,
 				backgroundcolor: '333333',
-				backgroundopacity: 1
+				backgroundopacity: 1,
+				mousewheel: false,
       
 			});
       
       		coverflow('container').on('ready', function() {
-      			
+				window.addEventListener("resize", function(){
+					coverflow('container').resize(window.innerWidth, 270);
+				});
+			
       			coverflow('container').on('click', function(index, link) {
       
       				alert(link);
@@ -183,24 +187,32 @@
       					"link": "http://twitter.com/",
 					},
 				],
-        width: window.innerWidth,
+				width: window.innerWidth,
+				height:270,
 				coverwidth: 180,
 				coverheight: 150,
 				fixedsize: true,
 				textoffset: 50,
 				backgroundcolor: '333333',
-				backgroundopacity: 1
+				backgroundopacity: 1,
+				mousewheel: false,
       
 			});
       
-      		coverflow('container').on('ready', function() {
-      			
-      			coverflow('container').on('click', function(index, link) {
-      
+      		coverflow('covers1').on('ready', function() {
+				window.addEventListener("resize", function(){
+					coverflow('covers1').resize(window.innerWidth, 270);
+				});
+			
+
+      			coverflow('covers1').on('click', function(index, link) {
+
       				alert(link);
       			});
-      		});
-          
+			  });
+
+			
+
           
           
           
