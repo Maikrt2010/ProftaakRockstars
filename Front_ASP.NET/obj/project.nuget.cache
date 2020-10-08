@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "73BD5GT6OohtTOAkDxqI53f8V623MNtAFIwAhAYKK47OTzXOIvplUy6mrPztf0h0CEiy6Qi6IhcJZK8oO5KEbg==",
+  "dgSpecHash": "QuS9Ur183LCNq6q62+Xf9SjoFZ7E+fpNV95bAX7o2lUydsAYIllgeu1KgHZ7eWgTHxauRGkXoZenVZg1QQpd2w==",
   "success": true,
-  "projectFilePath": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaspe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

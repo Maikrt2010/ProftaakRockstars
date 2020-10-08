@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aSs+mzInaL4U5fhzj+UvDbgAqr6o4LP6Y5JG8bVgyibG1KbWE9P9VLmlSttln8V9n3HqKPmn84fTZRkP8eOwxg==",
+  "dgSpecHash": "Ut3n9+g9OlIB0LqdjyExA672mZyPjxVS7w1kIwdAdjpGAxL3PFver+8cYjslWxJrJvviPOcY/1xo2ZlXiOEFkA==",
   "success": true,
-  "projectFilePath": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\DAL\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaspe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U/UD2IYCfIsjkurbbDPs+TKbkXhIs2WcDHZePaRl91v/UlX6r49hT3WZeahMxgu64eOf+K6TE3Par6+nnC06ow==",
+  "dgSpecHash": "ffxuXvaoXqtBq6ICsttNx5/d9w65UhchcXjJoEpqlKPuLdpTCoxD5wP5T7KvPGVZJx/O9UAQaLAsRRinwTXGXg==",
   "success": true,
-  "projectFilePath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\Factory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaspe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
