@@ -11,7 +11,8 @@ html{
 
 .hero {
     background-color: lightcyan;
-    background-image: url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 30%) 0%, rgba(161, 161, 161, 10%) 70%, #4d4d4d 100%),
+    url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
     background-position: center;
     background-size: cover;
   }
