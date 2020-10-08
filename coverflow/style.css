@@ -8,7 +8,13 @@ html{
   background-color: var(--main-bg-color);
 }
 
+.ql-editor{
+  background-color: white;
+}
 
+.ql-snow{
+  background-color: white;
+}
 
 .tag{
   margin-bottom: 6px;
@@ -125,3 +131,13 @@ html{
   .coverflow-text h1,
   .coverflow-text h2 {
     margin: 0; }
+
+
+
+    .hide-toolbar .ql-toolbar {
+      display: none;
+    }
+
+.hidden{
+  display: none;
+}
