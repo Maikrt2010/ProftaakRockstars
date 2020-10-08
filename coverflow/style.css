@@ -1,5 +1,6 @@
 :root{
   --main-bg-color: rgba(35,35,35,100%);
+  --black: rgba(0,0,0,100%);
 }
 
 html{
@@ -14,15 +15,40 @@ html{
 }
 
 .hero {
-    background-color: lightcyan;
-    background-image: linear-gradient(to bottom, rgba(219, 219, 219, 0.4) 0%, rgba(255, 255, 255, 0.1) 70%, var(--main-bg-color) 100%),
-    url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
-    background-position: center;
-    background-size: cover;
-  }
+  background-color: lightcyan;
+  background-image: linear-gradient(to bottom, rgba(219, 219, 219, 0.4) 0%, rgba(255, 255, 255, 0.1) 70%, var(--main-bg-color) 100%),
+  url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
+  background-position: center;
+  background-size: cover;
+}
   
-.level {
+.navbar{
+  background-color: var(--main-bg-color);
+}
+
+
+
+
+.sticky {
   /* background-color: grey; */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    z-index: 100;
+
+
+}
+
+.sticky > li{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .titlebox {
