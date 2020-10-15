@@ -6,6 +6,9 @@ namespace DALInterfaces
 {
     interface IUserRepository
     {
-
+        public void GetUser();
+        public void AddUser();
+        public void RemoveUser();
+        public void UpdateUser();
     }
 }
