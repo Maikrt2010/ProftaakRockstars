@@ -8,13 +8,6 @@ html{
   background-color: var(--main-bg-color);
 }
 
-.ql-editor{
-  background-color: white;
-}
-
-.ql-snow{
-  background-color: white;
-}
 
 .tag{
   margin-bottom: 6px;
@@ -51,7 +44,7 @@ html{
 }
 
 .sticky > li{
-  color: white;
+  color: rgb(114, 111, 111);
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -134,10 +127,11 @@ html{
 
 
 
-    .hide-toolbar .ql-toolbar {
-      display: none;
+    .ql-editor{
+      background-color: white;
+    }
+    
+    .ql-snow{
+      background-color: white;
     }
 
-.hidden{
-  display: none;
-}

@@ -18,7 +18,7 @@
 
 
     <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
 
   <section class="hero">
   <div class="hero-body">
@@ -57,19 +57,15 @@
   <div id="editor"></div>
 
   <button id="saveDelta">Save Delta</button>
-
+  <input type="hidden" name="quill-html" id="quill-html">
 
   <script>
-
     var toolbarOptions = [
       ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-      ['blockquote', 'code-block'],
       [{ 'list': 'ordered' }, { 'list': 'bullet' }],
       [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
       [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
       [{ 'direction': 'rtl' }],                         // text direction
-
-      [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
       [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
       ['link', 'image', 'video', 'formula'],
       ['clean']                                         // remove formatting 
@@ -80,7 +76,7 @@
       modules: {
         toolbar: toolbarOptions
       },
-
+      display: 'none',
       theme: 'snow'
     });
 
@@ -88,13 +84,16 @@
     $('#saveDelta').click(function () {
       window.delta = quill.getContents();
       console.log(delta);
-      document.getElementById("editor").classList.add("hidden");
+      var htmlContents = quill.root.innerHTML;
+      document.body.innerHTML = htmlContents;
+      console.log(htmlContents);
+      document.body.style.color = 'white';
+      body.style.textAlign = "right";
     });
+
 
   </script>
 
-
-  <!--<button type="button" onclick="document.write(delta)">Try it</button>-->
 
 
 </body>
