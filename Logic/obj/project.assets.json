@@ -1,26 +1,98 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DALInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DALInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        }
+      },
+      "Factory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Factory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Factory.dll": {}
+        }
+      },
+      "ViewInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ViewInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewInterfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "DALInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/DALInterfaces.csproj",
+      "msbuildProject": "../Interfaces/DALInterfaces.csproj"
+    },
+    "Factory/1.0.0": {
+      "type": "project",
+      "path": "../Factory/Factory.csproj",
+      "msbuildProject": "../Factory/Factory.csproj"
+    },
+    "ViewInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../ViewInterfaces/ViewInterfaces.csproj",
+      "msbuildProject": "../ViewInterfaces/ViewInterfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DALInterfaces >= 1.0.0",
+      "Factory >= 1.0.0",
+      "ViewInterfaces >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\jaspe\\.nuget\\packages\\": {}
+    "C:\\Users\\LHeld\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Logic\\Logic.csproj",
+      "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Logic\\Logic.csproj",
       "projectName": "Logic",
-      "projectPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Logic\\Logic.csproj",
-      "packagesPath": "C:\\Users\\jaspe\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Logic\\obj\\",
+      "projectPath": "D:\\repos\\ProftaakRockstars\\Logic\\Logic.csproj",
+      "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\ProftaakRockstars\\Logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +104,17 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj": {
+              "projectPath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj"
+            },
+            "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj": {
+              "projectPath": "D:\\repos\\ProftaakRockstars\\Interfaces\\DALInterfaces.csproj"
+            },
+            "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
+              "projectPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -53,18 +135,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

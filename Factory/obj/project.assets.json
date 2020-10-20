@@ -1,26 +1,63 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DALInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DALInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "DALInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/DALInterfaces.csproj",
+      "msbuildProject": "../Interfaces/DALInterfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DAL >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\jaspe\\.nuget\\packages\\": {}
+    "C:\\Users\\LHeld\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\Factory.csproj",
+      "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
       "projectName": "Factory",
-      "projectPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\Factory.csproj",
-      "packagesPath": "C:\\Users\\jaspe\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\obj\\",
+      "projectPath": "D:\\repos\\ProftaakRockstars\\Factory\\Factory.csproj",
+      "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\ProftaakRockstars\\Factory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +69,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\repos\\ProftaakRockstars\\DAL\\DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -53,18 +94,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

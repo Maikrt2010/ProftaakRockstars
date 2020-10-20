@@ -2,7 +2,7 @@
 
 namespace DAL
 {
-    public class ArticleRepository
+    public class ArticleRepository : IArticleRepository
     {
 
     }

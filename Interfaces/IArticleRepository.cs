@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DALInterfaces
 {
-    interface IArticleRepository
+    public interface IArticleRepository
     {
         public void GetArticle();
         public void AddArticle();
