@@ -2,7 +2,7 @@
 
 namespace ViewInterfaces
 {
-    public class Class1
+    public class IArticle
     {
     }
 }
