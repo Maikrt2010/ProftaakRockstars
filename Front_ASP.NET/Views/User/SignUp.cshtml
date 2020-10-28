@@ -3,43 +3,40 @@
     ViewData["Title"] = "SignUp";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section css{<link href="~/css/SignInForms.css" rel="stylesheet" />}
 
-<h1>SignUp</h1>
-
-<div class="py-4 my-4">
+<div class="login-box">
     <div asp-validation-for="All" class="text-danger"></div>
-    <div class="row form-group">
-        <div class="col-8 offset-2">
-            <div class="card">
-                <div class="card-body px-lg-5 pt-4">
-                    <form autocomplete="off" asp-action="SignUp" method="post">
-
-                        <hr />
-                        <div class="py-2">
-                            <input asp-for="Username" type="text" placeholder="Username" class="form-control" />
-                            <span asp-validation-for="Username" class="text-danger"></span>
-                        </div>
-                        <div class="py-2">
-                            <input asp-for="Email" type="Email" placeholder="Email" class="form-control" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-                        <div class="py-2">
-                            <input asp-for="Password" type="Password" placeholder="Wachtwoord" class="form-control" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-                        <div class="py-2">
-                            <input asp-for="ConfirmPassword" type="password" placeholder="Confirm-Wachtwoord" class="form-control" />
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                        </div>
-
-                        <div class="py-4">
-                            <input type="submit" value="Registreren" class="btn btn-primary form-control" />
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <form autocomplete="off" asp-action="SignUp" method="post">
+        <h1>Sign Up</h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input asp-for="Username" type="text" placeholder="Username" />
+            <span asp-validation-for="Username" class="text-danger"></span>
         </div>
-    </div>
+
+        <div class="textbox">
+            <i class="fas fa-envelope"></i>
+            <input asp-for="Email" type="Email" placeholder="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input asp-for="Password" type="Password" placeholder="Password"/>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="textbox">
+            <i class="fas fa-unlock"></i>
+            <input asp-for="ConfirmPassword" type="password" placeholder="Confirm-Wachtwoord"/>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Register" class="btn"/>
+
+    </form>
+
 </div>
 
 
