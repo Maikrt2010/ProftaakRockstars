@@ -20,6 +20,14 @@ html{
   background-position: center;
   background-size: cover;
 }
+
+.heroLazyLoading {
+  background-color: lightcyan;
+  background-image: linear-gradient(to bottom, rgba(219, 219, 219, 0.4) 0%, rgba(255, 255, 255, 0.1) 70%, var(--main-bg-color) 100%),
+  url(https://www.teamrockstars.nl/sites/default/files/styles/1920x500/public/2020-06/Robin%20Tienhoven.jpg?itok=rzLhjl5a);
+  background-position: center;
+  background-size: cover;
+}
   
 .navbar{
   background-color: var(--main-bg-color);
