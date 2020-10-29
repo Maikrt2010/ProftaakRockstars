@@ -67,7 +67,7 @@
       [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
       [{ 'direction': 'rtl' }],                         // text direction
       [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      ['link', 'image', 'video', 'formula'],
+      ['image'],
       ['clean']                                         // remove formatting 
     ];
 
@@ -84,11 +84,10 @@
     $('#saveDelta').click(function () {
       window.delta = quill.getContents();
       console.log(delta);
-      var htmlContents = quill.root.innerHTML;
-      document.body.innerHTML = htmlContents;
-      console.log(htmlContents);
-      document.body.style.color = 'white';
-      body.style.textAlign = "right";
+      // var htmlContents = quill.root.innerHTML;
+      // document.body.innerHTML = htmlContents;
+      // console.log(htmlContents);
+      // document.body.style.color = 'white';
     });
 
 
