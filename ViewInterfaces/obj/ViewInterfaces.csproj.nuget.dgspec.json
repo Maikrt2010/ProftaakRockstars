@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {}
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {}
   },
   "projects": {
-    "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
+        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
         "projectName": "ViewInterfaces",
-        "projectPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
-        "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\ProftaakRockstars\\ViewInterfaces\\obj\\",
+        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
+        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

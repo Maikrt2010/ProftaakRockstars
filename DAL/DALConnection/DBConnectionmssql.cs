@@ -1,7 +1,7 @@
-﻿namespace DAL.DALConnection
+﻿namespace DAL
 {
-    public class DBConnectionmssql
+    public class DBConnectionMssql
     {
-        private readonly string connenctionstring = "Server=mssql.fhict.local;Database=dbi364823_rockstar;User Id=dbi364823;Password=NooCyt2005";
+        private readonly string connenctionString = "Server=mssql.fhict.local;Database=dbi364823_rockstar;User Id=dbi364823;Password=NooCyt2005";
     }
 }

@@ -1,0 +1,4 @@
+D:\School\S2 Herstart 0210\ProftaakRockstars\DAL\bin\Debug\netcoreapp3.1\DALInterfaces.dll
+D:\School\S2 Herstart 0210\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+D:\School\S2 Herstart 0210\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+D:\School\S2 Herstart 0210\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
