@@ -1,7 +1,6 @@
 tinymce.init({
 	/* replace textarea having class .tinymce with tinymce editor */
 	selector: "textarea.tinymce",
-	mobile: { theme: 'mobile' },
 	
 	/* width and height of the editor */
 	width: "100%",
