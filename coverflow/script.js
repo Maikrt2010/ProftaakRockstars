@@ -155,10 +155,7 @@ coverflow('container').on('ready', function () {
 	coverflow('container').on('click', function (index, link) {
 
 		// alert("article clicked "+index);
-		let container = document.getElementById("container");
-		let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
-		let pos = clicked_cover.getBoundingClientRect();
-		console.log(pos);
+
 
 
 		let ifrm = document.getElementById('ifrm1');
@@ -171,8 +168,21 @@ coverflow('container').on('ready', function () {
 		title.textContent = 'Article' + index;
 
 
+		//popup
+		let container = document.getElementById("container");
+		let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
+		let pos = clicked_cover.getBoundingClientRect();
+		console.log(pos);
+		console.log(window.scrollY);
 
-		document.getElementById("popup").showpopup();
+		let popup = document.getElementById("popup")
+		popup.showpopup();
+		popup.style.bottom =  pos.bottom+"px";
+		popup.style.height =  pos.height+"px";
+		popup.style.left =  pos.left+"px";
+		popup.style.right = pos.right+"px";
+		popup.style.top =  pos.top+window.scrollY+"px";
+		popup.style.width =  pos.width+window.scrollX+"px";
 
 
 		// to place before another page element
@@ -184,17 +194,6 @@ coverflow('container').on('ready', function () {
 let popup = document.getElementById("popup")
 popup.showpopup = function () {
 	popup.classList.add("open");
-
-	popup.style.bottom =  "656px";
-	popup.style.height =  "150px";
-	popup.style.left =  "189.5px";
-	popup.style.right = "369.5px";
-	popup.style.top =  "506px";
-	popup.style.width =  "180px";
-
-
-	
-	
 
 	document.getElementById('overlay').style.display = "block";
 }
