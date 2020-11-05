@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color: rgb(255, 255, 255);
+    --main-bg-color: rgba(35,35,35,100%);
     --black: rgba(0,0,0,100%);
   }
   
@@ -132,4 +132,8 @@
     .coverflow-text h1,
     .coverflow-text h2 {
       margin: 0; }
+  
+  #data-container{
+      all:unset;
+  }
   
