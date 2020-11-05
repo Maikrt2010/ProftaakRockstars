@@ -177,7 +177,8 @@ coverflow('container').on('ready', function () {
 });
 
 document.getElementById("popup").showpopup = function () {
-	document.getElementById("popup").style.display = "block";
+	document.getElementById("popup").classList.add("open")
+
 	document.getElementById('overlay').style.display = "block";
 }
 
@@ -187,7 +188,7 @@ document.body.onmousedown = function () {
 
 	if (document.getElementById('overlay').style.display == "block") {
 		document.getElementById('overlay').style.display = "none";
-		document.getElementById('popup').style.display = "none";
+		document.getElementById('popup').classList.remove("open");
 	}
 
 };
