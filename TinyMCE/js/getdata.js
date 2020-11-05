@@ -4,7 +4,8 @@ $(document).ready(function(){
 
         var content = tinymce.get("texteditor").getContent();
         alert(content);
-		$("#data-container").html(content);
+		$("#data-container").html(content).css('color', 'white');
+		
 		return false;
 
 	});
