@@ -142,7 +142,7 @@
 				textoffset: 50,
 				backgroundcolor: '333333',
 				backgroundopacity: 1,
-				mousewheel: true,
+				mousewheel: false,
       
 			});
       
@@ -240,7 +240,7 @@
 				textoffset: 50,
 				backgroundcolor: '333333',
 				backgroundopacity: 1,
-				mousewheel: true,
+				mousewheel: false,
       
 			});
       
