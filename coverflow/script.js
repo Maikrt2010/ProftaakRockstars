@@ -155,6 +155,11 @@ coverflow('container').on('ready', function () {
 	coverflow('container').on('click', function (index, link) {
 
 		// alert("article clicked "+index);
+		let container = document.getElementById("container");
+		let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
+		let pos = clicked_cover.getBoundingClientRect();
+		console.log(pos);
+
 
 		let ifrm = document.getElementById('ifrm1');
 		// ifrm.style.display = "block";
@@ -176,8 +181,20 @@ coverflow('container').on('ready', function () {
 	});
 });
 
-document.getElementById("popup").showpopup = function () {
-	document.getElementById("popup").classList.add("open")
+let popup = document.getElementById("popup")
+popup.showpopup = function () {
+	popup.classList.add("open");
+
+	popup.style.bottom =  "656px";
+	popup.style.height =  "150px";
+	popup.style.left =  "189.5px";
+	popup.style.right = "369.5px";
+	popup.style.top =  "506px";
+	popup.style.width =  "180px";
+
+
+	
+	
 
 	document.getElementById('overlay').style.display = "block";
 }
