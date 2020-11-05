@@ -30,3 +30,12 @@ ViewInterfaces/obj/ViewInterfaces.csproj.nuget.g.props
 ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.assets.cache
 ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.csprojAssemblyReference.cache
 WebAPI/obj/Debug/WebAPI.vbprojAssemblyReference.cache
+DAL/obj/Debug/netcoreapp3.1/DAL.assets.cache
+DAL/obj/Debug/netcoreapp3.1/DAL.csprojAssemblyReference.cache
+Factory/obj/Debug/netcoreapp3.1/Factory.assets.cache
+Interfaces/obj/Debug/netcoreapp3.1/DALInterfaces.assets.cache
+Logic/obj/Debug/netcoreapp3.1/Logic.assets.cache
+ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.assets.cache
+ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.csprojAssemblyReference.cache
+WebAPI/obj/Debug/WebAPI.vbprojAssemblyReference.cache
+.vs/ProftaakRockstars/v16/.suo
