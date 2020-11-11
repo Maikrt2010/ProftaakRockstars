@@ -30,10 +30,48 @@ body {
     background-image: linear-gradient(to bottom, rgba(219, 219, 219, 0.4) 0%, rgba(255, 255, 255, 0.1) 70%, var(--main-bg-color) 100%), url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
     background-position: center;
     background-size: cover;
-    align-items: stretch;
+}
+
+.herocontainer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.heroimage {
+    margin: 0px;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+.titlebox {
+    /* flex-basis: 10rem; */
+    flex-grow: 2;
+    padding-left: 0.75rem;
+}
+
+.title,
+.subtitle {
+    /* word-break: break-word; */
+}
+
+.title {
+    font-size: 3rem;
+}
+
+@media screen and (max-width:800px) {
+    .herocontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .heroimage {}
+    .titlebox {
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
 }
 
 #popup {
@@ -123,10 +161,6 @@ body {
     color: white;
 }
 
-.titlebox {
-    /* background-color: rgba(196, 196, 196, 0.404) */
-}
-
 .titletext {
     color: rgb(243, 227, 0);
     text-shadow: 1px -2px 0 rgb(184, 0, 113), -1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -137,25 +171,4 @@ body {
 
 .has-text-white {
     color: white !important;
-}
-
-.title,
-.subtitle {
-    word-break: break-word;
-}
-
-.title {
-    font-size: 3rem;
-}
-
-.title {
-    font-size: 2.5rem;
-}
-
-.column {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75rem;
 }
