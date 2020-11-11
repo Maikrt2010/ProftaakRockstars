@@ -1,134 +1,90 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <script src="https://luwes.github.io/js-cover-flow/coverflow.js"></script>
+    <script src="https://luwes.github.io/js-cover-flow/coverflow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 
-  <section class="hero">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-one-fifth"> 
-        <figure class="image is-128x128">
-          <img src="https://www.teamrockstars.nl/sites/default/files/global_settings/logo-rockstars%402x_2.png">
-        </figure>
-      </div>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/coverflow.css">
 
-      <div class="column titlebox"> 
+    <script src="js/coverflow.js" defer></script>
+    <script src="js/components.js" defer></script>
 
-        <h1 class="title titletext is-size-1">
-          TECHBURST
-        </h1>
-
-        <h2 class="subtitle titletext">
-          DON'T KEEP IT IN THE BUBBLE - BURST IT
-        </h2>
-      </div>
-    </div>
-  </div>
-</section>
+    <div id="hero"></div>
 
 </head>
 
 <body>
 
-
-  <ul class="sticky has-text-white">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Something</a></li>
-    <li><a href="#">Something</a></li>
-    <li><a href="#">Something</a></li>
-    <li><a href="#">Something</a></li>
-  </ul>
+    <div id="navbar"></div>
 
 
-<div class="tile">
-  <div class="tile is-2"></div>
 
-  <div class="tile is-3 ">
     <p>
-      <span class="tag is-primary">
+        <span class="tag">
         #CLOUD
       </span>
-      <span class="tag is-link">
+        <span class="tag">
         #ARTICLES
       </span>
-      <span class="tag is-info">
+        <span class="tag">
         #TECH
     </p>
-  </div>
+
 
   
-  <div class="tile"></div>
-</div>
+
 
 <div id="overlay"></div>
 
 <div id="popup">
-  <iframe id="ifrm1" src="article-detail.html"></iframe>
+  <iframe id="popup-frame" src="article-popup.html"></iframe>
 </div>
 
-<div class="level">
   <div id="container"></div>
 
 
-</div>
+
 
 
   
-<!-- <div class="level">
-  space
-</div> -->
-
-
-<div class="tile">
-  <div class="tile is-2"></div>
-
-  <div class="tile is-3 ">
-    <p>
-      <span class="tag is-primary">
-        #TECH
-      </span>
-      <span class="tag is-link">
-        #PODCAST
-      </span>
-      <!-- <span class="tag is-info">
-        #JAVASCRIPT
-    </p> -->
-  </div>
-
-
-  
-  <div class="tile"></div>
-</div>
 
 
 
-<div class="level">
 
-  <div id="covers1"></div>
 
-</div>
+<p>
+  <span class="tag">
+    #TECH
+  </span>
+        <span class="tag">
+    #PODCAST
+  </span>
+    </p>
 
-<div class="content has-text-white">
-  <h1 class="is-large has-text-white">Test titel</h1>
-  <p class='is-small'>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum beatae officia nemo, eaque, repellat distinctio doloremque quaerat accusantium ipsum culpa recusandae nobis dolor? Distinctio, cum harum enim autem pariatur amet? 
-  </p>
-</div>
+
+
+    <div id="covers1"></div>
+
+
+
+    <div class="main-text">
+        <h1>Test titel</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum beatae officia nemo, eaque, repellat distinctio doloremque quaerat accusantium ipsum culpa recusandae nobis dolor? Distinctio, cum harum enim autem pariatur amet?
+        </p>
+    </div>
 
 
 
 </body>
+
 </html>
-
-
