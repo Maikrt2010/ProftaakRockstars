@@ -77,3 +77,11 @@ ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.assets.cache
 ViewInterfaces/obj/Debug/netcoreapp3.1/ViewInterfaces.csprojAssemblyReference.cache
 WebAPI/obj/Debug/WebAPI.vbprojAssemblyReference.cache
 *.cache
+.vs/ProftaakRockstars/DesignTimeBuild/.dtbcache.v2
+.vs/ProftaakRockstars/v16/.suo
+Front_ASP.NET/obj/Debug/netcoreapp3.1/Front_ASP.NET.assets.cache
+Front_ASP.NET/obj/Debug/netcoreapp3.1/Front_ASP.NET.csprojAssemblyReference.cache
+Front_ASP.NET/obj/Front_ASP.NET.csproj.nuget.dgspec.json
+Front_ASP.NET/obj/Front_ASP.NET.csproj.nuget.g.props
+Front_ASP.NET/obj/project.assets.json
+Front_ASP.NET/obj/project.nuget.cache

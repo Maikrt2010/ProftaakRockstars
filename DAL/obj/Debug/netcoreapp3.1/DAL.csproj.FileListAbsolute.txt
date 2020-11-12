@@ -1,5 +1,0 @@
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DAL\bin\Debug\netcoreapp3.1\DAL.dll
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs

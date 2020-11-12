@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {}
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
         "projectName": "Front_ASP.NET",
-        "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
-        "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\Front_ASP.NET\\obj\\",
+        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
