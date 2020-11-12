@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {}
+    "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {}
   },
   "projects": {
-    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
+    "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
+        "projectUniqueName": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
         "projectName": "ViewInterfaces",
-        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
-        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewInterfaces\\obj\\",
+        "projectPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\ViewInterfaces\\ViewInterfaces.csproj",
+        "packagesPath": "C:\\Users\\jaspe\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\ViewInterfaces\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,12 +47,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

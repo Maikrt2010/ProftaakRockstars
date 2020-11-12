@@ -485,23 +485,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maike\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jaspe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Factory\\Factory.csproj",
+      "projectUniqueName": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\Factory.csproj",
       "projectName": "Factory",
-      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Factory\\Factory.csproj",
-      "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Factory\\obj\\",
+      "projectPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\Factory.csproj",
+      "packagesPath": "C:\\Users\\jaspe\\.nuget\\packages\\",
+      "outputPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\Factory\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -514,8 +510,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DAL\\DAL.csproj"
+            "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\School\\Software\\S2 Herstart\\Proftaak\\ProftaakRockstars\\DAL\\DAL.csproj"
             }
           }
         }
@@ -538,12 +534,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
