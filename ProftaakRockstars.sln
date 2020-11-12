@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALInterfacesNew", "DALInte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicNew", "LogicNew\LogicNew.csproj", "{EE473D53-2A8E-4291-91F7-DD5D97FC8FF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryNew", "FactoryNew\FactoryNew.csproj", "{1331DD83-5FFC-4277-AB6F-F7805F5CF888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryNew", "FactoryNew\FactoryNew.csproj", "{1331DD83-5FFC-4277-AB6F-F7805F5CF888}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewIntersfacesNew", "ViewIntersfacesNew\ViewIntersfacesNew.csproj", "{46CE400F-7AD7-4FB9-A977-DE115732D945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewIntersfacesNew", "ViewIntersfacesNew\ViewIntersfacesNew.csproj", "{46CE400F-7AD7-4FB9-A977-DE115732D945}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Front_ASP.NET", "Front_ASP.NET\Front_ASP.NET.csproj", "{2535BDA2-E656-4774-831A-7447B8E84C62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{073AC371-B3D8-4160-A604-7D87B4A62453}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{46CE400F-7AD7-4FB9-A977-DE115732D945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CE400F-7AD7-4FB9-A977-DE115732D945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CE400F-7AD7-4FB9-A977-DE115732D945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2535BDA2-E656-4774-831A-7447B8E84C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2535BDA2-E656-4774-831A-7447B8E84C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2535BDA2-E656-4774-831A-7447B8E84C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2535BDA2-E656-4774-831A-7447B8E84C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073AC371-B3D8-4160-A604-7D87B4A62453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073AC371-B3D8-4160-A604-7D87B4A62453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073AC371-B3D8-4160-A604-7D87B4A62453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073AC371-B3D8-4160-A604-7D87B4A62453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
