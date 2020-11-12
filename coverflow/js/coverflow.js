@@ -151,18 +151,19 @@ coverflow('container').on('ready', function() {
 
     coverflow('container').on('click', function(index, link) {
 
-        // alert("article clicked "+index);
 
 
 
         let ifrm = document.getElementById('popup-frame');
-        // ifrm.style.display = "block";
 
         let ifrDoc = ifrm.contentDocument;
+        let articleData = this.config.playlist[index];
 
-        // let elem = ifrDoc.createElement("h1");
-        let title = ifrDoc.getElementById("title")
-        title.textContent = 'Article' + index;
+        let title = ifrDoc.getElementById("title");
+        title.textContent = 'Article' + articleData.title;
+
+        let author = ifrDoc.getElementById("author");
+        author.textContent = articleData.description;
 
         let content = ifrDoc.getElementById("popup-content");
         let coverimage = ifrDoc.getElementById("cover-image");
@@ -170,15 +171,12 @@ coverflow('container').on('ready', function() {
 
         covercontainer.style.backgroundImage = "url(" + this.config.playlist[index].image + ")";
 
-        // coverimage.src = this.config.playlist[index].image;
 
 
         //popup
-        // let container = document.getElementById("container");
         let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
         let pos = clicked_cover.getBoundingClientRect();
-        // console.log(pos);
-        // console.log(window.scrollY);
+
 
         let popup = document.getElementById("popup")
         popup.showpopup();
@@ -199,7 +197,6 @@ popup.showpopup = function() {
     popup.classList.add("open");
 
     document.getElementById('overlay').style.visibility = "visible";
-    // document.getElementById('overlay').style.display = "block";
     document.getElementById('overlay').style.pointerEvents = "auto";
 
 
