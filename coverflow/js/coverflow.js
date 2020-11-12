@@ -164,24 +164,31 @@ coverflow('container').on('ready', function() {
         let title = ifrDoc.getElementById("title")
         title.textContent = 'Article' + index;
 
+        let content = ifrDoc.getElementById("popup-content");
+        let coverimage = ifrDoc.getElementById("cover-image");
+        let covercontainer = ifrDoc.getElementById("cover-container");
+
+        covercontainer.style.backgroundImage = "url(" + this.config.playlist[index].image + ")";
+
+        // coverimage.src = this.config.playlist[index].image;
+
 
         //popup
-        let container = document.getElementById("container");
+        // let container = document.getElementById("container");
         let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
         let pos = clicked_cover.getBoundingClientRect();
-        console.log(pos);
-        console.log(window.scrollY);
+        // console.log(pos);
+        // console.log(window.scrollY);
 
         let popup = document.getElementById("popup")
         popup.showpopup();
-        // popup.style.bottom = pos.bottom + "px";
-        // popup.style.right = pos.right + "px";
 
-        // popup.style.left = pos.left + "px";
         popup.style.top = pos.top + window.scrollY + "px";
 
         popup.style.height = pos.height + "px";
         popup.style.width = pos.width + window.scrollX + "px";
+
+
 
         // open(link,'_self');
     });
