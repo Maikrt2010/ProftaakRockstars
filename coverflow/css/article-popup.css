@@ -45,14 +45,14 @@ body {
     margin: .5rem;
 }
 
-button {
+a.button {
     position: relative;
     bottom: 10px;
     text-align: center;
     background-color: var(--dark-yellow);
     justify-content: center;
     border: none;
-    color: var(black);
+    color: var(--black);
     padding: 20px 15px;
     text-align: center;
     overflow: hidden;
@@ -60,6 +60,7 @@ button {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 

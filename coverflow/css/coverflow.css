@@ -6,6 +6,7 @@
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -webkit-touch-callout: none;
+    width: 100%;
 }
 
 .coverflow .coverflow-wrap {
