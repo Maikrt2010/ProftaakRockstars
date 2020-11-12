@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: rgba(35, 35, 35, 100%);
+    --black: rgba(0, 0, 0, 100%);
+    --yellow: rgb(243, 227, 0);
+    --dark-yellow: rgb(255, 220, 20);
+}
+
 html,
 body {
     height: 100%;
@@ -39,9 +46,20 @@ body {
 }
 
 button {
-    position: absolute;
+    position: relative;
     bottom: 10px;
     text-align: center;
+    background-color: var(--dark-yellow);
+    justify-content: center;
+    border: none;
+    color: var(black);
+    padding: 20px 15px;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 

@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: rgba(35, 35, 35, 100%);
     --black: rgba(0, 0, 0, 100%);
+    --yellow: rgb(243, 227, 0);
 }
 
 html {
@@ -15,8 +16,6 @@ body {
     margin: 0px;
     color: white;
 }
-
-
 
 .tag {
     margin-bottom: 6px;
@@ -160,7 +159,7 @@ body {
 }
 
 .titletext {
-    color: rgb(243, 227, 0);
+    color: var(--yellow);
     text-shadow: 1px -2px 0 rgb(184, 0, 113), -1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
