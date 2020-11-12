@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DALInterfaces
 {
-    interface IUserRepository
+    public interface IUserRepository
     {
         public void GetUser();
         public void AddUser();

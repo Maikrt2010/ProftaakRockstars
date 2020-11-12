@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DALInterfaces;
 
 namespace DAL
 {
-    class UserRepository : IUserRepository
+    public class UserRepository : IUserRepository
     {
 
     }
