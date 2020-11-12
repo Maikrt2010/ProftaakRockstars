@@ -6,9 +6,9 @@ namespace DALInterfaces
 {
     public interface IArticleRepository
     {
-        public void GetArticle();
-        public void AddArticle();
-        public void RemoveArticle();
+        public ArticleDTO GetArticle(int Id);
+        public void AddArticle(ArticleDTO article);
+        public void RemoveArticle(int Id);
         public void UpdateArticle();
     }
 }

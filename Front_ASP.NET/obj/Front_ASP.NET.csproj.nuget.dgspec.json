@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {}
+    "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {}
   },
   "projects": {
-    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {
+    "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+        "projectUniqueName": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
         "projectName": "Front_ASP.NET",
-        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
-        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\obj\\",
+        "projectPath": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
+        "packagesPath": "C:\\Users\\LHeld\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\ProftaakRockstars\\Front_ASP.NET\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LHeld\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
