@@ -26,7 +26,7 @@
         <div id="navbar"></div>
 
         <form id="get-data-form" method="post">
-            <textarea id="texteditor">Hello, World!</textarea>
+            <textarea id="texteditor"></textarea>
             <input type="submit" value="Get Data">
 
         </form>
@@ -34,7 +34,19 @@
         <div id="data-container" class="main-text">
 
         </div>
-
+<script>
+    const lat = 1;
+    const lon = 2;
+    const data = {lat, lon};
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+fetch('/api', options)
+</script>
 
 
 
@@ -45,6 +57,5 @@
         <script type="text/javascript" src="plugin/tinymce/init-tinymce.js"></script>
         <script type="text/javascript" src="js/getdata.js"></script> -->
     </body>
-    <!-- <link rel='stylesheet' defer href="plugin/tinymce/skins/content/default/content.min.css"></link> -->
 
 </html>
