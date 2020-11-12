@@ -4,7 +4,7 @@ coverflow('container').setup({
             "title": "Serverless webhosting met AWS Amplify",
             "description": "Jeroen de Deken",
             "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-10/802855-637330036210103252-16x9_1.jpg",
-            "link": "",
+            "link": "google.com",
             "duration": "183"
         },
         {
@@ -153,14 +153,14 @@ coverflow('container').on('ready', function() {
 
 
 
-
         let ifrm = document.getElementById('popup-frame');
-
         let ifrDoc = ifrm.contentDocument;
+
         let articleData = this.config.playlist[index];
+        console.log(articleData.link);
 
         let title = ifrDoc.getElementById("title");
-        title.textContent = 'Article' + articleData.title;
+        title.textContent = articleData.title;
 
         let author = ifrDoc.getElementById("author");
         author.textContent = articleData.description;
