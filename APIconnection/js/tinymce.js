@@ -1,5 +1,7 @@
 tinymce.init({
     selector: '#texteditor',
+    plugins: 'code image',
+    toolbar: 'undo redo | image code'
 });
 
 $(document).ready(function() {
