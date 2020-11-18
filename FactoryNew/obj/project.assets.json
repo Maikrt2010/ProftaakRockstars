@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": []
+  },
+  "packageFolders": {
+<<<<<<< HEAD:Model/obj/project.assets.json
+    "C:\\Users\\dbrod\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Maike\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\FactoryNew.csproj",
+      "projectName": "FactoryNew",
+      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\FactoryNew.csproj",
+      "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+      "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\obj\\",
+      "projectStyle": "PackageReference",
+<<<<<<< HEAD:Model/obj/project.assets.json
+      "configFilePaths": [
+        "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+<<<<<<< HEAD:Model/obj/project.assets.json
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+=======
+        "netstandard2.1": {
+>>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+<<<<<<< HEAD:Model/obj/project.assets.json
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+=======
+      "netstandard2.1": {
+>>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+<<<<<<< HEAD:Model/obj/project.assets.json
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+>>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+      }
+    }
+  }
+}

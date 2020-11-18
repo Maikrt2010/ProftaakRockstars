@@ -1,0 +1,5 @@
+D:\School\S2 Herstart 0210\ProftaakRockstars\DALNew\bin\Debug\netstandard2.1\DALNew.deps.json
+D:\School\S2 Herstart 0210\ProftaakRockstars\DALNew\bin\Debug\netstandard2.1\DALNew.dll
+D:\School\S2 Herstart 0210\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DALNew.csprojAssemblyReference.cache
+D:\School\S2 Herstart 0210\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DALNew.AssemblyInfoInputs.cache
+D:\School\S2 Herstart 0210\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DALNew.AssemblyInfo.cs
