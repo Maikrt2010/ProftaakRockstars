@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "9cf7fb192be508efd13b84ea30138ae7a307a892"
+=======
+#pragma checksum "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "3f1cce2dd39a4602d51af96e303c350eba7a4c31"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #pragma checksum "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "3f1cce2dd39a4602d51af96e303c350eba7a4c31"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -88,6 +92,7 @@ using Front_ASP.NET.Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             DefineSection("css", async() => {
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9cf7fb192be508efd13b84ea30138ae7a307a8927386", async() => {
                 }
@@ -114,6 +119,8 @@ using Front_ASP.NET.Models;
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
             WriteLiteral(@"
 <h1>Sign In</h1>
 
@@ -129,6 +136,9 @@ using Front_ASP.NET.Models;
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3f1cce2dd39a4602d51af96e303c350eba7a4c316933", async() => {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -139,6 +149,7 @@ using Front_ASP.NET.Models;
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
 #nullable restore
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,11 +167,16 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line 19 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Username);
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
+#line 19 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Username);
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 
 #line default
 #line hidden
 #nullable disable
                 __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -194,12 +210,17 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_0.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -215,8 +236,14 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 WriteLiteral("\r\n        </div>\r\n\r\n        <div class=\"textbox\">\r\n            <i class=\"fas fa-unlock\"></i>\r\n            ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9cf7fb192be508efd13b84ea30138ae7a307a89212633", async() => {
+=======
+                WriteLiteral("\r\n");
+                WriteLiteral("                        </div>\r\n                        <div class=\"py-2\">\r\n                            ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3f1cce2dd39a4602d51af96e303c350eba7a4c318969", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 WriteLiteral("\r\n");
                 WriteLiteral("                        </div>\r\n                        <div class=\"py-2\">\r\n                            ");
@@ -240,7 +267,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 20 "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml"
+=======
+#line 23 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #line 23 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\User\SignIn.cshtml"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -256,6 +287,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
                 __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -295,6 +327,10 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_3.Value;
                 __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
+                __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_3.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_4);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
@@ -304,6 +340,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
                 }
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -359,6 +396,10 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n        </div>\r\n    ");
+=======
+                WriteLiteral("\r\n");
+                WriteLiteral("                        </div>\r\n                        <div class=\"py-4\">\r\n                            <input type=\"submit\" value=\"Inloggen\" class=\"btn btn-primary form-control\" />\r\n                        </div>\r\n                    ");
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 WriteLiteral("\r\n");
                 WriteLiteral("                        </div>\r\n                        <div class=\"py-4\">\r\n                            <input type=\"submit\" value=\"Inloggen\" class=\"btn btn-primary form-control\" />\r\n                        </div>\r\n                    ");

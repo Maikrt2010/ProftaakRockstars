@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb195"
+=======
+#pragma checksum "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "88610fb9736f5385f305ffba3e3f0c55154372e3"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #pragma checksum "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "88610fb9736f5385f305ffba3e3f0c55154372e3"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -89,7 +93,11 @@ using Front_ASP.NET.Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb1958663", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e38693", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e38693", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -111,7 +119,11 @@ using Front_ASP.NET.Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb1959317", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88610fb9736f5385f305ffba3e3f0c55154372e39357", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88610fb9736f5385f305ffba3e3f0c55154372e39357", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -138,7 +150,11 @@ using Front_ASP.NET.Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19510495", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88610fb9736f5385f305ffba3e3f0c55154372e310535", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88610fb9736f5385f305ffba3e3f0c55154372e310535", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -164,6 +180,7 @@ using Front_ASP.NET.Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 WriteLiteral("\r\n    <script src=\"https://kit.fontawesome.com/2a3c4f4fbc.js\" crossorigin=\"anonymous\"></script>\r\n    ");
 #nullable restore
 #line 10 "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
@@ -172,6 +189,8 @@ Write(RenderSection("css", false));
 #line default
 #line hidden
 #nullable disable
+=======
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
@@ -194,9 +213,15 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19512727", async() => {
                 WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19513183", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e312418", async() => {
+                WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e312874", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e312418", async() => {
                 WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n            <div class=\"container\">\r\n                ");
@@ -243,7 +268,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19515489", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e315180", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e315180", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -276,7 +305,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19517328", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e317019", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e317019", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -309,7 +342,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19519174", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e318865", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e318865", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -342,7 +379,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19521018", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e320709", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e320709", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -376,7 +417,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 43 "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+=======
+#line 41 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #line 41 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -394,9 +439,12 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 WriteLiteral("\r\n        </main>\r\n    </div>\r\n\r\n    ");
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19523264", async() => {
 =======
+=======
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
@@ -425,6 +473,9 @@ Write(RenderSection("css", false));
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e324777", async() => {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
+=======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -446,7 +497,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19524365", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e325878", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e325878", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -472,7 +527,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76eb2bbf22e50f5515199aba4a8dbfe4dcbbb19525466", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e326979", async() => {
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88610fb9736f5385f305ffba3e3f0c55154372e326979", async() => {
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -494,7 +553,11 @@ Write(RenderSection("css", false));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 49 "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+=======
+#line 52 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #line 52 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
@@ -522,7 +585,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ScriptTagHelper.AppendVersion = true;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 50 "D:\School\S2 Herstart 0210\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+=======
+#line 53 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views
 =======
 #line 53 "C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\Front_ASP.NET\Views\Shared\_Layout.cshtml"
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views

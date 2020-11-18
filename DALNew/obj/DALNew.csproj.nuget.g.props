@@ -15,9 +15,12 @@
 <<<<<<< HEAD:DALNew/obj/DALNew.csproj.nuget.g.props
 <<<<<<< HEAD:DALNew/obj/DALNew.csproj.nuget.g.props
 <<<<<<< HEAD:DALNew/obj/DALNew.csproj.nuget.g.props
+<<<<<<< HEAD:DALNew/obj/DALNew.csproj.nuget.g.props
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
   </PropertyGroup>
+=======
+>>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views:DAL/obj/DAL.csproj.nuget.g.props
 =======
 >>>>>>> parent of 6aac0a7... Fixed the markup of both sign in / up views:DAL/obj/DAL.csproj.nuget.g.props
 =======
