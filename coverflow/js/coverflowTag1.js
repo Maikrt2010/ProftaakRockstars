@@ -1,25 +1,11 @@
 coverflow('container').setup({
-    item: 5,
+    item: 0,
     playlist: [{
             "title": "Serverless webhosting met AWS Amplify",
             "description": "Jeroen de Deken",
             "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-10/802855-637330036210103252-16x9_1.jpg",
             "link": "google.com",
             "tag": "tag1"
-        },
-        {
-            "title": "Cloud center of excellence (CCOE)",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-08/header_1.jpg",
-            "link": "http://luwes.co/",
-            "tag": "tag2"
-        },
-        {
-            "title": "Lazy loading with Angular",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-06/Robin%20Tienhoven_0.jpg",
-            "link": "ArticleLazyLoading.html",
-            "tag": "tag3"
         },
         {
             "title": "Van Devops naar Devsecops",
@@ -29,39 +15,11 @@ coverflow('container').setup({
             "tag": "tag1"
         },
         {
-            "title": "Devops starter",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/devops%20code%20header_1.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Security by design bij informatiesystemen",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-04/Tech%20Burst%20omslagfoto%20.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
             "title": "HTTP-store with Angular & RXJS",
             "description": "Robin van Tienhoven",
             "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/centralize-state-squared.jpg",
             "link": "",
             "tag": "tag1"
-        },
-        {
-            "title": "Monitor residential climate with Raspberry Pi",
-            "description": "Pim Hazebroek",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/raspberry-pi-squared.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Themes in nativescript with webpack",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/NativeScript-6.0-1024x684_0.jpg",
-            "link": "",
-            "tag": "tag3"
         },
         {
             "title": "Versimpel je gebruik van VM-applicaties",
@@ -71,39 +29,11 @@ coverflow('container').setup({
             "tag": "tag1"
         },
         {
-            "title": "Wijnproeven met ML.net",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/computer-work-wine-glass-cup-drink-472371-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Een library migreren naar JPMS",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/java_1.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
             "title": "Een eenvoudig genetisch algoritme",
             "description": "Vincent Hendriks",
             "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/genetisch-algoritme_0.jpg",
             "link": "",
             "tag": "tag1"
-        },
-        {
-            "title": "De groene ontwikkelaar",
-            "description": "Robin Gordijn",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/binary-code-binary-binary-system-byte-bits-administrator-1458885-pxhere.com__1.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Structured logging in een .net applicatie",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/architecture-structure-sky-window-glass-view-877703-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag3"
         },
         {
             "title": "Maven version rules delen tussen projecten",
@@ -113,32 +43,11 @@ coverflow('container').setup({
             "tag": "tag1"
         },
         {
-            "title": "Van niets tot full-web-app in 10 kliks!",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/computer-technology-number-memory-electronic-tech-1292524-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Dit is nieuw in .net core 3.0",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/photo-1517148815978-75f6acaaf32c.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
             "title": "Software is niet voor eeuwig",
             "description": "Lars Stolwijk",
             "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/0.jpg",
             "link": "",
             "tag": "tag1"
-        },
-        {
-            "title": "Lesgeven, eenvoud, kwalitatieve code",
-            "description": "Venkat Subramaniam",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/venkat.jpg",
-            "link": "",
-            "tag": "tag2"
         }
 
     ],
@@ -236,7 +145,7 @@ document.body.onmousedown = function() {
 
 
 coverflow('covers1').setup({
-    item: 5,
+    item: 0,
     playlist: [{
             "title": "#10 Deze ervaren .NET ontwikkelaar, en sinds kort ook Product Owner, over wat zijn definitie van groei is en hoe je duidelijke taal spreekt.",
             "description": "Met Vincent Bitter",
