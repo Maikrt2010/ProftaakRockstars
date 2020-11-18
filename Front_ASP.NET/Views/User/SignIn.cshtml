@@ -3,32 +3,34 @@
     ViewData["Title"] = "SignIn";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@section css{<link href="~/css/SignInForms.css" rel="stylesheet" />}
 
-<div class="login-box">
+<h1>Sign In</h1>
+
+<div class="py-4 my-4">
     <div asp-validation-for="All" class="text-danger"></div>
-    <form autocomplete="off" asp-action="SignIn" method="post">
-        <h1>Sign In</h1>
-        <div class="textbox">
-            <i class="fas fa-user"></i>
-            <input asp-for="Email" type="text" placeholder="Username" />
-            <span asp-validation-for="Email" class="text-danger"></span>
+    <div class="row form-group">
+        <div class="col-8 offset-2">
+            <div class="card">
+                <div class="card-body px-lg-5 pt-4">
+                    <form autocomplete="off" asp-action="SignIn" method="post">
+
+                        <hr />
+                        <div class="py-2">
+                            <input asp-for="Username" type="text" placeholder="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="py-2">
+                            <input asp-for="Password" type="Password" placeholder="Wachtwoord" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="py-4">
+                            <input type="submit" value="Inloggen" class="btn btn-primary form-control" />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div class="textbox">
-            <i class="fas fa-unlock"></i>
-            <input asp-for="Password" type="Password" placeholder="Password" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
-
-        <input type="submit" value="Sign in" class="btn"/>
-
-        <div class="checkbox">
-            <label asp-for="RememberMe">
-                <input asp-for="RememberMe" />
-                @Html.DisplayNameFor(m => m.RememberMe)
-            </label>
-        </div>
-    </form>
-
+    </div>
 </div>
+
+
