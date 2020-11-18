@@ -9,6 +9,6 @@ namespace DALInterfaces
         public ArticleDTO GetArticle(int Id);
         public void AddArticle(ArticleDTO article);
         public void RemoveArticle(int Id);
-        public void UpdateArticle();
+        public void UpdateArticle(ArticleDTO article);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DALInterfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -24,12 +25,19 @@ namespace DAL
 
         public void RemoveArticle(int Id)
         {
+            var article = _context.Articles.Find(Id);
 
+            if (article == null) return;
+
+            _context.Articles.Remove(article);
+            _context.SaveChanges();
         }
 
-        public void UpdateArticle()
+        public void UpdateArticle(ArticleDTO updatedArticle)
         {
-
+            var article = _context.Articles.Attach(updatedArticle);
+            article.State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }
