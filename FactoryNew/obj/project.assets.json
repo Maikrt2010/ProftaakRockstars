@@ -1,39 +1,63 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "DALInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DALInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DALInterfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DALNew/DAL.csproj",
+      "msbuildProject": "../DALNew/DAL.csproj"
+    },
+    "DALInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../DALInterfacesNew/DALInterfaces.csproj",
+      "msbuildProject": "../DALInterfacesNew/DALInterfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "DAL >= 1.0.0"
+    ]
   },
   "packageFolders": {
-<<<<<<< HEAD:Model/obj/project.assets.json
     "C:\\Users\\dbrod\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Maike\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\FactoryNew.csproj",
-      "projectName": "FactoryNew",
-      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\FactoryNew.csproj",
-      "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\obj\\",
+      "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
+      "projectName": "Factory",
+      "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
+      "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\obj\\",
       "projectStyle": "PackageReference",
-<<<<<<< HEAD:Model/obj/project.assets.json
       "configFilePaths": [
         "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -44,13 +68,13 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-<<<<<<< HEAD:Model/obj/project.assets.json
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-=======
         "netstandard2.1": {
->>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
-          "projectReferences": {}
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj": {
+              "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -60,12 +84,8 @@
       }
     },
     "frameworks": {
-<<<<<<< HEAD:Model/obj/project.assets.json
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
-=======
       "netstandard2.1": {
->>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
+        "targetAlias": "netstandard2.1",
         "imports": [
           "net461",
           "net462",
@@ -81,11 +101,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD:Model/obj/project.assets.json
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
->>>>>>> BleedingEdge:FactoryNew/obj/project.assets.json
       }
     }
   }
