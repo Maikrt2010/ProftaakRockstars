@@ -169,6 +169,64 @@ body {
     text-shadow: 1px -2px 0 rgb(184, 0, 113), -1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.dropbtn {
+    background-color:var(--main-bg-color);
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: var(--main-bg-color);
+  }
+  
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+  }
+  
+  #myInput:focus {outline: 3px solid var(--yellow);}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: black}
+  
+  .show {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: var(--main-bg-color);
+  }
+
 
 /* Bulma wordt niet meer gebruikt, deze classes nog wel */
 
