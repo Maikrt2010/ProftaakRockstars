@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using DALInterfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Models;
 
 namespace DAL
 {
@@ -13,6 +15,11 @@ namespace DAL
 
         }
 
-        public DbSet<ArticleDTO> Articles { get; set; }
+        public DbSet<ArticleModel> Articles { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }

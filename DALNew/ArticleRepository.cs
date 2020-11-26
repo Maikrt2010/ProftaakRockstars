@@ -1,6 +1,8 @@
 ﻿using DALInterfaces;
 using Microsoft.EntityFrameworkCore;
+using Models;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DAL
@@ -12,20 +14,31 @@ namespace DAL
         {
             _context = context;
         }
-        public ArticleDTO GetArticle(int Id)
+
+        public ArticleRepository()
         {
-            return _context.Articles.SingleOrDefault(dto => dto.ArticleId == Id);
+
         }
 
-        public void AddArticle(ArticleDTO article)
+        public ArticleModel GetArticle(int id)
+        {
+            return _context.Articles.SingleOrDefault(article => article.ArticleId == id);
+        }
+
+        public IEnumerable<ArticleModel> GetArticles()
+        {
+            return _context.Articles;
+        }
+
+        public void AddArticle(ArticleModel article)
         {
             _context.Articles.Add(article);
             _context.SaveChanges();
         }
 
-        public void RemoveArticle(int Id)
+        public void RemoveArticle(int id)
         {
-            var article = _context.Articles.Find(Id);
+            var article = _context.Articles.Find(id);
 
             if (article == null) return;
 
@@ -33,7 +46,7 @@ namespace DAL
             _context.SaveChanges();
         }
 
-        public void UpdateArticle(ArticleDTO updatedArticle)
+        public void UpdateArticle(ArticleModel updatedArticle)
         {
             var article = _context.Articles.Attach(updatedArticle);
             article.State = EntityState.Modified;
