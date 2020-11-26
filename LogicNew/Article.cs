@@ -9,6 +9,7 @@ namespace Logic
         public string Title { get; }
         public string Author { get; }
         public int ArticleId { get; }
+        public string Content { get; }
 
         public Article()
         {
