@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: rgba(35, 35, 35, 100%);
+    --main-bg-color: rgb(35, 35, 35);
     --black: rgba(0, 0, 0, 100%);
     --yellow: rgb(243, 227, 0);
 }
@@ -175,3 +175,11 @@ body {
 .has-text-white {
     color: white !important;
 }
+
+
+  .containerinput input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }

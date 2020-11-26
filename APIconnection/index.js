@@ -12,6 +12,10 @@ app.get('/css/article.css', function(request,response){
     response.sendFile(__dirname + '/css/article.css');
 });
 
+app.get('/css/tags-input.css', function(request,response){
+    response.sendFile(__dirname + '/css/tags-input.css');
+});
+
 let article;
 app.post('/api',(request, response) => {
     article = request.body;
