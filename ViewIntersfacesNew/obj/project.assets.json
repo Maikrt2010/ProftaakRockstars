@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfacesNew.csproj",
-      "projectName": "ViewIntersfacesNew",
-      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfacesNew.csproj",
+      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
+      "projectName": "ViewIntersfaces",
+      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
       "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
       "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\obj\\",
       "projectStyle": "PackageReference",

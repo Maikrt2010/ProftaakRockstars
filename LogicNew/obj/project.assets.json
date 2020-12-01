@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\LogicNew\\LogicNew.csproj",
-      "projectName": "LogicNew",
-      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\LogicNew\\LogicNew.csproj",
+      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\LogicNew\\Logic.csproj",
+      "projectName": "Logic",
+      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\LogicNew\\Logic.csproj",
       "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
       "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\LogicNew\\obj\\",
       "projectStyle": "PackageReference",
