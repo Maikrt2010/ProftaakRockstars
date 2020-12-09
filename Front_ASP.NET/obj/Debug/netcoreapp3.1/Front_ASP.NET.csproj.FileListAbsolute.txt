@@ -416,4 +416,8 @@ D:\repos\ProftaakRockstars\Front_ASP.NET\obj\Debug\netcoreapp3.1\Front_ASP.NET.c
 D:\repos\ProftaakRockstars\Front_ASP.NET\obj\Debug\netcoreapp3.1\Front_ASP.NET.MvcApplicationPartsAssemblyInfo.cache
 D:\repos\ProftaakRockstars\Front_ASP.NET\bin\Debug\netcoreapp3.1\Models.dll
 D:\repos\ProftaakRockstars\Front_ASP.NET\bin\Debug\netcoreapp3.1\Models.pdb
+<<<<<<< HEAD
+>>>>>>> CRUD-Article
+=======
+D:\repos\ProftaakRockstars\Front_ASP.NET\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 >>>>>>> CRUD-Article

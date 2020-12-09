@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zwcERl8o8ZfPHMVmF48lEs+rtGvTQlXnXqHmE1peJdRhFuMup2PXJg6+8mh5X3Ry5J1WpXl1jxdPGt0kU7pW0A==",
+  "dgSpecHash": "01eTn1jD/vdV+Lm/HHMKcr3Poj411qdMkMUeqPhumN54EbLFc7z1vy1G/G5o7wxOr4aKEiBP7YyFuJ+O3uHb6Q==",
   "success": true,
   "projectFilePath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\Front_ASP.NET\\Front_ASP.NET.csproj",
   "expectedPackageFiles": [
@@ -85,7 +85,7 @@
     "C:\\Users\\Maike\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\Maike\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Users\\Maike\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\Maike\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Maike\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Maike\\.nuget\\packages\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Maike\\.nuget\\packages\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",
