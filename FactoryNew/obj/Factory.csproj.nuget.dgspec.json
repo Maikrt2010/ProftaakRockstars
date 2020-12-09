@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj": {}
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\Factory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj": {
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj",
+        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj",
         "projectName": "DALInterfaces",
-        "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj",
-        "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\obj\\",
+        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj",
+        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +29,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +40,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -54,21 +55,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj": {
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj",
+        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj",
-        "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\obj\\",
+        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,10 +84,9 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj": {
-                "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj"
+              "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj": {
+                "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj"
               }
             }
           }
@@ -96,7 +99,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -112,21 +114,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj": {
+    "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
+        "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
         "projectName": "Factory",
-        "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
-        "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\FactoryNew\\obj\\",
+        "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\Factory.csproj",
+        "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\FactoryNew\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,10 +143,9 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj": {
-                "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\DALNew\\DAL.csproj"
+              "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\DAL.csproj": {
+                "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\DALNew\\DAL.csproj"
               }
             }
           }
@@ -154,7 +158,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -170,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
