@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,19 +7,16 @@ using System.Threading.Tasks;
 
 namespace Front_ASP.NET.Models
 {
-    public class SignInViewModel
+    public class SignInViewModel : User
     {
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "Email moet ingevuld worden!")]
+        [DataType(DataType.EmailAddress)]
+        public override string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Wachtwoord moet ingevuld worden!")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
-
-        [Display(Name = "Remember me")]
-        public bool RememberMe { get; set; }
+        public override string PasswordHash { get; set; }
 
     }
 }

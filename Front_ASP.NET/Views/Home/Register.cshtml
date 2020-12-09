@@ -1,0 +1,44 @@
+﻿@model SignUpViewModel;
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section css{
+    <link href="~/css/SignInForms.css" rel="stylesheet" />
+}
+
+<div class="login-box">
+    <div asp-validation-for="All" class="text-danger"></div>
+    <form autocomplete="off" asp-action="Register" method="post">
+        <h1>Sign Up</h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input asp-for="Firstname" type="text" placeholder="Firstname" />
+            <span asp-validation-for="Firstname" class="text-danger"></span>
+        </div>
+
+        <div class="textbox">
+            <i class="fas fa-envelope"></i>
+            <input asp-for="Email" type="Email" placeholder="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input asp-for="PasswordHash" type="Password" placeholder="Password" />
+            <span asp-validation-for="PasswordHash" class="text-danger"></span>
+        </div>
+
+        <div class="textbox">
+            <i class="fas fa-unlock"></i>
+            <input asp-for="ConfirmPassword" type="password" placeholder="Confirm-Wachtwoord" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Register" class="btn" />
+
+    </form>
+
+</div>
+
+

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAL;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,23 +8,27 @@ using System.Threading.Tasks;
 
 namespace Front_ASP.NET.Models
 {
-    public class SignUpViewModel
+    public class SignUpViewModel : User
     {
 
         [Required]
-        public string Username { get; set; }
+        [DataType(DataType.EmailAddress, ErrorMessage = "Email is niet ingevuld")]
+        public override string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password is required")]
+        [StringLength(255, ErrorMessage = "Must be between 5 and 255 characters", MinimumLength = 5)]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public override string PasswordHash { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Confirm Password is required")]
+        [StringLength(255, ErrorMessage = "Must be between 5 and 255 characters", MinimumLength = 5)]
         [DataType(DataType.Password)]
+        [Compare("PasswordHash")]
         public string ConfirmPassword { get; set; }
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        public string Role { get; set; }
+
+        public IEnumerable<SelectListItem> RoleList { get; set; }
 
     }
 }

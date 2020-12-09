@@ -17,18 +17,11 @@
 
         <div class="textbox">
             <i class="fas fa-unlock"></i>
-            <input asp-for="Password" type="Password" placeholder="Password" />
-            <span asp-validation-for="Password" class="text-danger"></span>
+            <input asp-for="PasswordHash" type="Password" placeholder="Password" />
+            <span asp-validation-for="PasswordHash" class="text-danger"></span>
         </div>
 
         <input type="submit" value="Sign in" class="btn"/>
-
-        <div class="checkbox">
-            <label asp-for="RememberMe">
-                <input asp-for="RememberMe" />
-                @Html.DisplayNameFor(m => m.RememberMe)
-            </label>
-        </div>
     </form>
 
 </div>
