@@ -17,6 +17,7 @@ namespace Front_ASP.NET.Controllers
 
         private readonly ILogger<HomeController> _logger;
 
+
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
