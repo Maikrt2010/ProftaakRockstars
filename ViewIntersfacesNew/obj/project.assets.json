@@ -8,19 +8,23 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\dbrod\\.nuget\\packages\\": {}
+    "C:\\Users\\Maike\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
+      "projectUniqueName": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
       "projectName": "ViewIntersfaces",
-      "projectPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
-      "packagesPath": "C:\\Users\\dbrod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dbrod\\Documents\\S2 proftaak\\ProftaakRockstars\\ViewIntersfacesNew\\obj\\",
+      "projectPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\ViewIntersfaces.csproj",
+      "packagesPath": "C:\\Users\\Maike\\.nuget\\packages\\",
+      "outputPath": "D:\\School\\S2 Herstart 0210\\ProftaakRockstars\\ViewIntersfacesNew\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\dbrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maike\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
