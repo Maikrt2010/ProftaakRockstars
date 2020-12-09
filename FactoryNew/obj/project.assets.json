@@ -1942,7 +1942,8 @@
         "dependencies": {
           "DALInterfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10",
+          "Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
@@ -1954,11 +1955,24 @@
       "DALInterfaces/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DALInterfaces.dll": {}
         },
         "runtime": {
           "bin/placeholder/DALInterfaces.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
         }
       }
     }
@@ -4624,7 +4638,7 @@
       ]
     },
     "System.Private.DataContractSerialization/4.3.0": {
-      "sha512": "yDaJ2x3mMmjdZEDB4IbezSnCsnjQ4BxinKhRAaP6kEgL6Bb6jANWphs5SzyD8imqeC/3FxgsuXT6ykkiH1uUmA==",
+      "sha512": "Yn8kw5zWdJCCMJWFSEpbPYWTqTMWH/Cj2EsFLX3IS3ZVmEbRhWhhsbVLFF+v3FJooiW7JDXnBC6080yp0djKNA==",
       "type": "package",
       "path": "system.private.datacontractserialization/4.3.0",
       "files": [
@@ -6699,7 +6713,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "sha512": "6rQOa02Poe+/BTuYOss9oIOyNjIGQDVnRT+P145EHcGG05gVKJjtFnUd/iwxMWquqntqSksmA9ebuOWuPuJdIw==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -6737,7 +6751,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "sha512": "D2Zm9SRht/tqNFj9PY9+ot3GBU6zqNahXlIIJLApaMAUgVAx0n/zt3bVqelPO/4l6NAl+WWnWCA66usl+2v7Gg==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
@@ -6815,6 +6829,11 @@
       "type": "project",
       "path": "../DALInterfacesNew/DALInterfaces.csproj",
       "msbuildProject": "../DALInterfacesNew/DALInterfaces.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

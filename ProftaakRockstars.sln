@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewIntersfaces", "ViewInte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Front_ASP.NET", "Front_ASP.NET\Front_ASP.NET.csproj", "{2535BDA2-E656-4774-831A-7447B8E84C62}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{B1154945-DDAA-4349-8BF3-719A25CA8346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{BCF5571A-8552-4B7F-98E4-70369EDE2F70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{2535BDA2-E656-4774-831A-7447B8E84C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2535BDA2-E656-4774-831A-7447B8E84C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2535BDA2-E656-4774-831A-7447B8E84C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1154945-DDAA-4349-8BF3-719A25CA8346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1154945-DDAA-4349-8BF3-719A25CA8346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1154945-DDAA-4349-8BF3-719A25CA8346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1154945-DDAA-4349-8BF3-719A25CA8346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF5571A-8552-4B7F-98E4-70369EDE2F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF5571A-8552-4B7F-98E4-70369EDE2F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF5571A-8552-4B7F-98E4-70369EDE2F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF5571A-8552-4B7F-98E4-70369EDE2F70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

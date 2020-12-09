@@ -4,14 +4,16 @@ using System.Text;
 
 namespace Logic
 {
-    class Article
+    public class Article
     {
-        public string Title { get; set; }
-        public string Author { get; set; }
+        public string Title { get; }
+        public string Author { get; }
+        public int ArticleId { get; }
+        public string Content { get; }
 
         public Article()
         {
 
         }
-        }
+    }
 }

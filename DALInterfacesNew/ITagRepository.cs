@@ -1,11 +1,14 @@
-﻿namespace DALInterfaces
+﻿using System.Collections.Generic;
+using Models;
+
+namespace DALInterfaces
 {
     public interface ITagRepository
     {
-        void AddTag();
-        void RemovwTag();
-        void UpdateTag();
-        void GetTag();
-
+        TagModel GetTag(int Id);
+        IEnumerable<TagModel> GetTag();
+        void AddTag(TagModel tag);
+        void RemoveTag(int Id);
+        void UpdateTag(TagModel tag);
     }
 }

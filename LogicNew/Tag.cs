@@ -1,4 +1,4 @@
-﻿namespace DAL.Model
+﻿namespace Logic
 {
     public class Tag
     {

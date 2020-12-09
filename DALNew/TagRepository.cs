@@ -1,27 +1,54 @@
 ﻿using DALInterfaces;
-
+using Microsoft.EntityFrameworkCore;
+using Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 namespace DAL
 {
     public class TagRepository : ITagRepository
     {
-        public void AddTag()
+        private readonly AppDbContext _context;
+        public TagRepository(AppDbContext context)
         {
-            throw new System.NotImplementedException();
+            _context = context;
+        }
+        public TagRepository()
+        {
+
         }
 
-        public void RemovwTag()
+        public TagModel GetTag(int Id)
         {
-            throw new System.NotImplementedException();
+            return _context.Tags.SingleOrDefault(tag => tag.TagId == Id);
         }
 
-        public void UpdateTag()
+        public IEnumerable<TagModel> GetTag()
         {
-            throw new System.NotImplementedException();
+            return _context.Tags;
         }
 
-        public void GetTag()
+        public void AddTag(TagModel tag)
         {
-            throw new System.NotImplementedException();
+            _context.Tags.Add(tag);
+            _context.SaveChanges();
         }
+
+        public void RemoveTag(int Id)
+        {
+            var tag = _context.Tags.Find(Id);
+
+            if (tag == null) return;
+
+            _context.Tags.Remove(tag);
+            _context.SaveChanges();
+        }
+
+        public void UpdateTag(TagModel updatedtag)
+        {
+            var tag = _context.Tags.Attach(updatedtag);
+            tag.State = EntityState.Modified;
+            _context.SaveChanges();
+        } 
     }
 }
