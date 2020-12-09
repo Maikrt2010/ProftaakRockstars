@@ -1,3 +1,0 @@
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DAL.csprojAssemblyReference.cache
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DAL.AssemblyInfoInputs.cache
-C:\Users\dbrod\Documents\S2 proftaak\ProftaakRockstars\DALNew\obj\Debug\netstandard2.1\DAL.AssemblyInfo.cs
