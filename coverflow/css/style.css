@@ -178,13 +178,9 @@ body {
     cursor: pointer;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: var(--main-bg-color);
-  }
-  
-
 #myInput {
     box-sizing: border-box;
+    background-image: url('../img/searchicon.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
@@ -218,6 +214,20 @@ body {
   }
   
   .dropdown-content a:hover {background-color: black}
+
+  .dropdown-content button {
+    float: right;
+    padding: 13.5px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content button:hover {
+    background: #ccc;
+  }
   
   .show {
     display: block;
@@ -225,8 +235,69 @@ body {
   
   .dropdown:hover .dropbtn {
     background-color: var(--main-bg-color);
+    border: none;
   }
 
+  .searchBarContainer {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#articleList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.article {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'title image'
+        'author image';
+    text-align: left;
+}
+
+.article > h2 {
+    grid-area: title;
+    margin-bottom: 0px;
+}
+
+.article > p {
+    grid-area: author;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.article > img {
+    max-height: 100px;
+    grid-area: image;
+}
 
 /* Bulma wordt niet meer gebruikt, deze classes nog wel */
 
