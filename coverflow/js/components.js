@@ -5,6 +5,6 @@
 
 
 $(function() {
-    $("#navbar").load("components/navbar.html");
-    $("#hero").load("components/hero.html");
+    $("#navbar").load("/components/navbar.html");
+    $("#hero").load("/components/hero.html");
 });
