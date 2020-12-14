@@ -1,0 +1,306 @@
+:root {
+    --main-bg-color: rgba(35, 35, 35, 100%);
+    --black: rgba(0, 0, 0, 100%);
+    --yellow: rgb(243, 227, 0);
+}
+
+html {
+    height: 100%;
+    background-color: var(--main-bg-color);
+    margin: 0px;
+}
+
+body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main-text {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tag {
+    margin-bottom: 6px;
+}
+
+.hero {
+    background-color: lightcyan;
+    background-image: linear-gradient(to bottom, rgba(219, 219, 219, 0.4) 0%, rgba(255, 255, 255, 0.1) 70%, var(--main-bg-color) 100%), url(https://icity.nl/wp-content/uploads/2016/05/Bubble1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.herocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.heroimage {
+    margin: 0px;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+.titlebox {
+    /* flex-basis: 10rem; */
+    flex-grow: 2;
+    padding-left: 0.75rem;
+}
+
+.title,
+.subtitle {
+    /* word-break: break-word; */
+}
+
+.title {
+    font-size: 3rem;
+}
+
+@media screen and (max-width:800px) {
+    .herocontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .heroimage {}
+    .titlebox {
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+}
+
+#popup {
+    position: absolute;
+    box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
+    border: 0px;
+    padding: 0px;
+    z-index: 20;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%);
+    visibility: hidden;
+}
+
+#popup.open {
+    opacity: 1;
+    visibility: visible;
+    animation-duration: 1s;
+    animation-name: expand;
+    animation-fill-mode: forwards;
+    transition: opacity .5s linear;
+}
+
+@keyframes expand {
+    from {
+        height: 180px;
+        width: 180px;
+    }
+    to {
+        height: 400px;
+        width: 270px;
+    }
+}
+
+#popup.fullsize {
+    height: 300px;
+}
+
+#popup-frame {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+}
+
+#overlay {
+    visibility: hidden;
+    /* display: none; */
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    /* padding: 2em; */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    pointer-events: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: opacity .5s linear;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    z-index: 12;
+}
+
+.navbar>li {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.navbar>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.titletext {
+    color: var(--yellow);
+    text-shadow: 1px -2px 0 rgb(184, 0, 113), -1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.dropbtn {
+    background-color:var(--main-bg-color);
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+#myInput {
+    box-sizing: border-box;
+    background-image: url('../img/searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+  }
+  
+  #myInput:focus {outline: 3px solid var(--yellow);}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: black}
+
+  .dropdown-content button {
+    float: right;
+    padding: 13.5px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content button:hover {
+    background: #ccc;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: var(--main-bg-color);
+    border: none;
+  }
+
+  .searchBarContainer {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#articleList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.article {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'title image'
+        'author image';
+    text-align: left;
+}
+
+.article > h2 {
+    grid-area: title;
+    margin-bottom: 0px;
+}
+
+.article > p {
+    grid-area: author;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.article > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+/* Bulma wordt niet meer gebruikt, deze classes nog wel */
+
+.has-text-white {
+    color: white !important;
+}

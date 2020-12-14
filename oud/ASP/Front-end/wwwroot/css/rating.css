@@ -1,0 +1,14 @@
+img {
+    height: 30px;
+    width: 30px;
+}
+
+#stars {
+    padding-left: 0px;
+    margin-bottom: 5px;
+}
+
+#average {
+    margin-top: 0px;
+    margin-bottom: 5em;
+}
