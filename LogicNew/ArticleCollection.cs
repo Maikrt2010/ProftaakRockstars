@@ -11,38 +11,44 @@ namespace Logic
 {
     public class ArticleCollection :IArticle
     {
-        private IArticleRepository articleRepository;
+        private IArticleRepository _articleRepository;
+
+        public ArticleCollection(IArticleRepository articleRepository)
+        {
+            _articleRepository = articleRepository;
+        }
+
         public ArticleCollection()
         {
-            
+
         }
 
         public ArticleModel GetArticle(int id)
         {
-            var article = articleRepository.GetArticle(id);
+            var article = _articleRepository.GetArticle(id);
             return article;
         }
 
         public IEnumerable<ArticleModel> GetArticles()
         {
             IEnumerable<ArticleModel> articles = new List<ArticleModel>();
-            articles = articleRepository.GetArticles();
+            articles = _articleRepository.GetArticles();
             return articles;
         }
 
         public void AddArticle(ArticleModel article)
         {
-            articleRepository.AddArticle(article);
+            _articleRepository.AddArticle(article);
         }
 
         public void UpdateArticle(ArticleModel article)
         {
-            articleRepository.UpdateArticle(article);
+            _articleRepository.UpdateArticle(article);
         }
 
         public void RemoveArticle(int id)
         {
-            articleRepository.RemoveArticle(id);
+            _articleRepository.RemoveArticle(id);
         }
 
         //public Article ConvertToArticle(ArticleModel articlemodel)

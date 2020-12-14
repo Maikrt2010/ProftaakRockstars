@@ -24,7 +24,7 @@ namespace UnitTesting
                 Title = "Lorem Ipsum"
             };
 
-            articleCollection.CreateArticle(article);
+            articleCollection.AddArticle(article);
 
 
 
