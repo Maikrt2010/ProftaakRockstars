@@ -1,53 +1,12 @@
 coverflow('container').setup({
     item: 0,
-    playlist: [{
-            "title": "Serverless webhosting met AWS Amplify",
-            "description": "Jeroen de Deken",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-10/802855-637330036210103252-16x9_1.jpg",
-            "link": "google.com",
-            "tag": "tag1"
-        },
+    playlist: [
         {
-            "title": "Van Devops naar Devsecops",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/header.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "HTTP-store with Angular & RXJS",
+            "title": "Lazy loading with Angular",
             "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/centralize-state-squared.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Versimpel je gebruik van VM-applicaties",
-            "description": "Bart Kooijmans",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-12/sea-wood-sunset-boat-lake-river-509292-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Een eenvoudig genetisch algoritme",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/genetisch-algoritme_0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Maven version rules delen tussen projecten",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/laptop-desk-macbook-writing-working-technology-860609-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Software is niet voor eeuwig",
-            "description": "Lars Stolwijk",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/0.jpg",
-            "link": "",
-            "tag": "tag1"
+            "image": "https://lh3.googleusercontent.com/h8Rr0KVbjySSM6Jc2ypNbAW8Akb1HeG1Lh365VsZo-dQCITc7j_M1ObfpaRj6iaL71ix4eHWrtfC-J-MMUA0llLPpwSQM5_j4rARRaPtnoDdEqgakXCIpBOZhivfixhoq5CxSLypQcmImpsD-bNDwd3esadm21K9Path18a_QpXuf34VzIBVAUZJ79qd_FKlV4R7QG3q23T6VR1AyP5sWhHd63ADe-oghz6OR8_0J2eh5WEYtKIzflQ_j5arZrK1Gql4a1c9-vy_Ql7OZy8ipo3kiVIK7E7AQiQd6ywWqLLL1P-B68fPATQFGfg4XwsPnO3oaxL5Y1dh5iDCyUh7xpYd-1nV_u9R0Ov3oC1B92t03hY473l_9gb6slDmXMIXUBbgb8ow2yJEF0TfpgUAoYyLIlzJF4Ob765RsEsD1stUtFpwJtt-E8wUA2ifdfpl_jqLf3ne8pvdla8B6ABJYMvdOxs4bU1R1z0zzD5cJ7wJEjRQUnsblXMkzKp3n1AAiagbqYYik86SykgpqkZtaCXk1EvRQFE7lZWtYi1A9iR7h7ZCDhCZr7ViOL_t-FqFiZlkSdEaudK6r6-vll0n9iSOOW68v-QPm4RDLi4UsSXXWXSz4E05cI9_LhlSfEh8Nr250gvd2pkV0r5agLq2jAX7JUCyjKvgBbNbaRSniWlGOuoFKZef5dXQG8F2=s459-no?authuser=0",
+            "link": "ArticleLazyLoading.html",
+            "tag": "tag3"
         }
 
     ],
@@ -65,12 +24,12 @@ coverflow('container').setup({
 
 });
 
-coverflow('container').on('ready', function() {
-    window.addEventListener("resize", function() {
+coverflow('container').on('ready', function () {
+    window.addEventListener("resize", function () {
         coverflow('container').resize(window.innerWidth, 270);
     });
 
-    coverflow('container').on('click', function(index, link) {
+    coverflow('container').on('click', function (index, link) {
 
 
 
@@ -114,7 +73,7 @@ coverflow('container').on('ready', function() {
 });
 
 let popup = document.getElementById("popup")
-popup.showpopup = function() {
+popup.showpopup = function () {
     popup.classList.add("open");
 
     document.getElementById('overlay').style.visibility = "visible";
@@ -126,7 +85,7 @@ popup.showpopup = function() {
 }
 
 
-document.body.onmousedown = function() {
+document.body.onmousedown = function () {
     console.log("click");
 
     if (document.getElementById('overlay').style.visibility == "visible") {
@@ -145,74 +104,74 @@ document.body.onmousedown = function() {
 
 
 coverflow('covers1').setup({
-    item: 0,
+    item: 5,
     playlist: [{
-            "title": "#10 Deze ervaren .NET ontwikkelaar, en sinds kort ook Product Owner, over wat zijn definitie van groei is en hoe je duidelijke taal spreekt.",
-            "description": "Met Vincent Bitter",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/1fXS8ikiHTuFXjZCI87Kdi",
-            "duration": "183"
-        },
-        {
-            "title": "#9 Deze DevOps evangelist steelt op dit moment de show als Cloud Solution Architect en vertelt ons hoe zijn unieke route hem hier heeft gebracht en hij geeft tips hoe je je marktwaarde kunt verhogen.",
-            "description": "Met David de Hoop",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/2V9h63z2DQH2c2KNbq6g0G",
-            "duration": "782"
-        },
-        {
-            "title": "#8 Deze platform engineer met liefde voor de pure techniek deelt zijn gouden tips voor het bijblijven in de IT, het durven stellen van vragen en vertelt over het stoeien met de beesten van...",
-            "description": "Met Subhi Dweik",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/4gjOn6E51OJlhdJr1RAw7U",
-        },
-        {
-            "title": "#7 Deze software engineer leerde hoe hij van een teruggetrokken leven meer naar buiten kon treden om zo meer van het leven te genieten",
-            "description": "Met Jeroen de Deken",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/0iNPYFgFetz0FK8qoJrRyW",
-            "duration": "183"
-        },
-        {
-            "title": "#6 Deze DevOps Cloud man vertelt in dit gesprek met 'een open einde' hoe je er soms met gestrekt been in moet gaan om voor jezelf op te komen, hoe hij de eigenaar van AnyCoin gelukkig ...",
-            "description": "Met Maarten van Arem",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/7BHhv2mYnAKvvSHZQlA5nY",
-            "duration": "782"
-        },
-        {
-            "title": "#5 Deze ervaren IT-allrounder vertelt over de kunst en de valkuil van de klant tevreden willen stellen, de misvatting over software developers en zijn recept voor groei & ontwikkeling",
-            "description": "Met Christiaan Nieuwlaat",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/5G9eQiTgjwkT4EP7fPVpEJ",
-        },
-        {
-            "title": "#4 Met 20 jaar op de teller vertelt deze Limburger over hoe zijn rol als Azure Solution Architect is als een droom die uitkwam en alle stappen die hem daarbij hebben geholpen",
-            "description": "Met Marco Vervoort",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/5AlHMrGCtXSQJgkpuszsoV",
-            "duration": "183"
-        },
-        {
-            "title": "#3 Dit jonge talent vertelt over zijn avonturen als ondernemer, zijn huidige rol als Tech Lead, het belang van Personal Branding en hoe het hem lukt om soms zijn hoofd leeg te maken",
-            "description": "Met Sjors Snoeren",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/1d98Yhn3FF8UAnL6B1SNrz",
-            "duration": "782"
-        },
-        {
-            "title": "#2 De enthousiaste 30’er die vertelt over zijn rol als Team Lead, 5 jaren plan, liefde voor de combinatie van programmeren & het coachen van mensen",
-            "description": "Met Pascal Quist",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/6Sr1cfJ6S7OJHgqFNESdkH",
-        },
-        {
-            "title": "#1 Over zijn route tot Solution Architect, het belang van self-management en het durven vragen van feedback aan anderen",
-            "description": "Met Oscar van der Leij",
-            "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
-            "link": "https://open.spotify.com/episode/5Q5njuuhXNMlj528moiQIZ",
-            "duration": "183"
-        }
+        "title": "#10 Deze ervaren .NET ontwikkelaar, en sinds kort ook Product Owner, over wat zijn definitie van groei is en hoe je duidelijke taal spreekt.",
+        "description": "Met Vincent Bitter",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/1fXS8ikiHTuFXjZCI87Kdi",
+        "duration": "183"
+    },
+    {
+        "title": "#9 Deze DevOps evangelist steelt op dit moment de show als Cloud Solution Architect en vertelt ons hoe zijn unieke route hem hier heeft gebracht en hij geeft tips hoe je je marktwaarde kunt verhogen.",
+        "description": "Met David de Hoop",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/2V9h63z2DQH2c2KNbq6g0G",
+        "duration": "782"
+    },
+    {
+        "title": "#8 Deze platform engineer met liefde voor de pure techniek deelt zijn gouden tips voor het bijblijven in de IT, het durven stellen van vragen en vertelt over het stoeien met de beesten van...",
+        "description": "Met Subhi Dweik",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/4gjOn6E51OJlhdJr1RAw7U",
+    },
+    {
+        "title": "#7 Deze software engineer leerde hoe hij van een teruggetrokken leven meer naar buiten kon treden om zo meer van het leven te genieten",
+        "description": "Met Jeroen de Deken",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/0iNPYFgFetz0FK8qoJrRyW",
+        "duration": "183"
+    },
+    {
+        "title": "#6 Deze DevOps Cloud man vertelt in dit gesprek met 'een open einde' hoe je er soms met gestrekt been in moet gaan om voor jezelf op te komen, hoe hij de eigenaar van AnyCoin gelukkig ...",
+        "description": "Met Maarten van Arem",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/7BHhv2mYnAKvvSHZQlA5nY",
+        "duration": "782"
+    },
+    {
+        "title": "#5 Deze ervaren IT-allrounder vertelt over de kunst en de valkuil van de klant tevreden willen stellen, de misvatting over software developers en zijn recept voor groei & ontwikkeling",
+        "description": "Met Christiaan Nieuwlaat",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/5G9eQiTgjwkT4EP7fPVpEJ",
+    },
+    {
+        "title": "#4 Met 20 jaar op de teller vertelt deze Limburger over hoe zijn rol als Azure Solution Architect is als een droom die uitkwam en alle stappen die hem daarbij hebben geholpen",
+        "description": "Met Marco Vervoort",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/5AlHMrGCtXSQJgkpuszsoV",
+        "duration": "183"
+    },
+    {
+        "title": "#3 Dit jonge talent vertelt over zijn avonturen als ondernemer, zijn huidige rol als Tech Lead, het belang van Personal Branding en hoe het hem lukt om soms zijn hoofd leeg te maken",
+        "description": "Met Sjors Snoeren",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/1d98Yhn3FF8UAnL6B1SNrz",
+        "duration": "782"
+    },
+    {
+        "title": "#2 De enthousiaste 30’er die vertelt over zijn rol als Team Lead, 5 jaren plan, liefde voor de combinatie van programmeren & het coachen van mensen",
+        "description": "Met Pascal Quist",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/6Sr1cfJ6S7OJHgqFNESdkH",
+    },
+    {
+        "title": "#1 Over zijn route tot Solution Architect, het belang van self-management en het durven vragen van feedback aan anderen",
+        "description": "Met Oscar van der Leij",
+        "image": "https://cdn.podcastfeed.nl/aeba5040-b60f-11ea-8880-9774aad122c1/aeba5c00-b60f-11ea-b1db-55f05061b5d6.jpg",
+        "link": "https://open.spotify.com/episode/5Q5njuuhXNMlj528moiQIZ",
+        "duration": "183"
+    }
     ],
     width: window.innerWidth,
     height: 270,
@@ -226,13 +185,13 @@ coverflow('covers1').setup({
 
 });
 
-coverflow('covers1').on('ready', function() {
-    window.addEventListener("resize", function() {
+coverflow('covers1').on('ready', function () {
+    window.addEventListener("resize", function () {
         coverflow('covers1').resize(window.innerWidth, 270);
     });
 
 
-    coverflow('covers1').on('click', function(index, link) {
+    coverflow('covers1').on('click', function (index, link) {
 
         open(link);
     });

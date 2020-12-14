@@ -1,5 +1,5 @@
 coverflow('covers1').setup({
-    item: 5,
+    item: 3,
     playlist: [{
             "title": "#10 Deze ervaren .NET ontwikkelaar, en sinds kort ook Product Owner, over wat zijn definitie van groei is en hoe je duidelijke taal spreekt.",
             "description": "Met Vincent Bitter",

@@ -2,46 +2,11 @@ coverflow('container').setup({
     item: 0,
     playlist: [
         {
-            "title": "Lazy loading with Angular",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-06/Robin%20Tienhoven_0.jpg",
-            "link": "ArticleLazyLoading.html",
-            "tag": "tag3"
-        },
-        {
-            "title": "Security by design bij informatiesystemen",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-04/Tech%20Burst%20omslagfoto%20.jpg",
+            "title": "Devops starter",
+            "description": "Marco Vervoort",
+            "image": "https://lh3.googleusercontent.com/7Hcyb1n-TznpdnUOBJDpXossnL9dcIfYKo3yfqRQCti_u5399kja3nWIRiCECb_tBUyYS5Wy9lMADmxn6h4V4JAN0cWgWhloedojpHnoVxHk-FhrmduGmGr5tvslb4kEtTc35hhAR745ZOOpJX2BDyceT-xn--Z3JkNywVObeU_5F-Po90jSepXoLQZiilQ6ak9bKC3m2kmL36_OlmWoS4uea8mxT0BT-q8pi3VkqWNnxFBk7jUiGrLlQy6uOb8EbmDMcUQX55bIJBIW03V95Yoo0JUwY7RTLuGE7cm2iZ_dAS0NoaBA-XLgQB4Mm7FLWv7lFWqdxoB80_mpXH21JBhJ98Hz1LHuIB4jG9fslEzbbGvZP7EMGMnUYZpUXekZ5FKoBtq9Rd_7KwYJr-4QTImDXOj1KUkGKHwMrMcLmLzwjb8llr68DdqtRlel5b_kMvQguRMYbDmGCcMbzmMTtLZZI4K_9miSSEQxgr7PPAqDe8j5EibBuQo5bs_a_Rfy8c4Gko1Dx7KnU_ez86izb3nzSRe-iYT8SAl3vXthi__Dg5sUSNmBlnzrWIyxjMn6TA_T8HRNChRy555xW5m9aJISKqHopPCayThqrv7r8N8UsCud395ZofTImWfz6_50qoj2_uu4x094euHUobVpzPK6qcSqdq0BZnwXD8-qI6DXufACT_tHwc8zGvrp=s459-no?authuser=0",
             "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Themes in nativescript with webpack",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/NativeScript-6.0-1024x684_0.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Een library migreren naar JPMS",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/java_1.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Structured logging in een .net applicatie",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/architecture-structure-sky-window-glass-view-877703-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Dit is nieuw in .net core 3.0",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/photo-1517148815978-75f6acaaf32c.jpg",
-            "link": "",
-            "tag": "tag3"
+            "tag": "tag2"
         }
 
     ],

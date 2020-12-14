@@ -2,53 +2,11 @@ coverflow('container').setup({
     item: 0,
     playlist: [
         {
-            "title": "Cloud center of excellence (CCOE)",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-08/header_1.jpg",
-            "link": "http://luwes.co/",
-            "tag": "tag2"
-        },
-        {
-            "title": "Devops starter",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/devops%20code%20header_1.jpg",
+            "title": "Van Devops naar Devsecops",
+            "description": "Christiaan Nieuwlaat",
+            "image": "https://lh3.googleusercontent.com/4XvTP6fCprTfJoPLQs7z4JO2F3DQOvPuIfV0_w-abOIxMvC-CL_RILChzQTskSKV8SBOZiI4mHdx9u9foXUJ80kokZz2J_fSBlJCyrBY-u9pbtKt3-gahi8lr-dqsemyb7dIakI40AnwqlfcbcDrmfdfCxeLvPDHLe-B7NJ2udnwYQ2iZ5Tdpb7RhUguokMIK4OxBDlrmvIh7iDnNaVUIHDCDZVclm0NEKrMcv0yhy5YEQ0HLO4rGyL-F0wEI89CW0sTYj3lgCdPKcuBzo_6USy5hsCCj8X1N8TQUirrIc5FteBfQirC0dht9Cz3BoiVL3pxZokirNqGH4f7fxhpIRzfSBoG4fkwmmsLKZA76JaTt5GmRiD0LJ8XKre5NijUYwIK0azQJlPlHNIH9_Ohl41HUXe0YKLHO2Cm0EzWFsv5w58UEIJ354Vj7NDqF2gtfp1TW19xkbsL_YNxiRLNbfK-S2IM-WyE9IDwg3Y89NRmfXR2MaFXoXStneKM-yNAsn0ecb_35KowEP7ly38ItqHvGsTFnu0inrmG2Q7Ey6SURM-orbunEMYCrzI9_DJZPeIZUE0uNKfsydVkW18ScT0j_mwwZA7NAYgWg84p9-w49fp3iG2A2wpdXFxxz3OQED-0QOJ0_5oIcfneCCQveBzqhwLX67WmNSSZUhB9FQqDbEWoifi-hSB0Fj0_=s459-no?authuser=0",
             "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Monitor residential climate with Raspberry Pi",
-            "description": "Pim Hazebroek",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/raspberry-pi-squared.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Wijnproeven met ML.net",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/computer-work-wine-glass-cup-drink-472371-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "De groene ontwikkelaar",
-            "description": "Robin Gordijn",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/binary-code-binary-binary-system-byte-bits-administrator-1458885-pxhere.com__1.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Van niets tot full-web-app in 10 kliks!",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/computer-technology-number-memory-electronic-tech-1292524-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Lesgeven, eenvoud, kwalitatieve code",
-            "description": "Venkat Subramaniam",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/venkat.jpg",
-            "link": "",
-            "tag": "tag2"
+            "tag": "tag1"
         }
 
     ],

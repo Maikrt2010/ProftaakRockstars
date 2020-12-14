@@ -23,11 +23,18 @@ namespace ASPFront.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Tag1()
         {
             return View();
         }
-
+        public IActionResult Tag2()
+        {
+            return View();
+        }
+        public IActionResult Tag3()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -35,3 +35,6 @@ C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netco
 C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\ASPFront.genruntimeconfig.cache
 C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\ASPFront.csproj.CopyComplete
 C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\Razor\Views\Article\Create.cshtml.g.cs
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tag1.cshtml.g.cs
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tag2.cshtml.g.cs
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\nieuw\ASPFront\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tag3.cshtml.g.cs
