@@ -5,10 +5,11 @@ using Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ViewIntersfaces;
 
 namespace Logic
 {
-    public class ArticleCollection
+    public class ArticleCollection :IArticle
     {
         private IArticleRepository articleRepository;
         public ArticleCollection()
@@ -29,7 +30,7 @@ namespace Logic
             return articles;
         }
 
-        public void CreateArticle(ArticleModel article)
+        public void AddArticle(ArticleModel article)
         {
             articleRepository.AddArticle(article);
         }
@@ -39,7 +40,7 @@ namespace Logic
             articleRepository.UpdateArticle(article);
         }
 
-        public void DeleteArticle(int id)
+        public void RemoveArticle(int id)
         {
             articleRepository.RemoveArticle(id);
         }
