@@ -1,11 +1,11 @@
 coverflow('container').setup({
-    item: 0,
+    item: 1,
     playlist: [
         {
             "title": "Lazy loading with Angular",
             "description": "Robin van Tienhoven",
             "image": "https://lh3.googleusercontent.com/h8Rr0KVbjySSM6Jc2ypNbAW8Akb1HeG1Lh365VsZo-dQCITc7j_M1ObfpaRj6iaL71ix4eHWrtfC-J-MMUA0llLPpwSQM5_j4rARRaPtnoDdEqgakXCIpBOZhivfixhoq5CxSLypQcmImpsD-bNDwd3esadm21K9Path18a_QpXuf34VzIBVAUZJ79qd_FKlV4R7QG3q23T6VR1AyP5sWhHd63ADe-oghz6OR8_0J2eh5WEYtKIzflQ_j5arZrK1Gql4a1c9-vy_Ql7OZy8ipo3kiVIK7E7AQiQd6ywWqLLL1P-B68fPATQFGfg4XwsPnO3oaxL5Y1dh5iDCyUh7xpYd-1nV_u9R0Ov3oC1B92t03hY473l_9gb6slDmXMIXUBbgb8ow2yJEF0TfpgUAoYyLIlzJF4Ob765RsEsD1stUtFpwJtt-E8wUA2ifdfpl_jqLf3ne8pvdla8B6ABJYMvdOxs4bU1R1z0zzD5cJ7wJEjRQUnsblXMkzKp3n1AAiagbqYYik86SykgpqkZtaCXk1EvRQFE7lZWtYi1A9iR7h7ZCDhCZr7ViOL_t-FqFiZlkSdEaudK6r6-vll0n9iSOOW68v-QPm4RDLi4UsSXXWXSz4E05cI9_LhlSfEh8Nr250gvd2pkV0r5agLq2jAX7JUCyjKvgBbNbaRSniWlGOuoFKZef5dXQG8F2=s459-no?authuser=0",
-            "link": "ArticleLazyLoading.html",
+            "link": "",
             "tag": "tag3"
         }
 
