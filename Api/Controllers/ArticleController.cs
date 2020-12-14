@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Api.Models;
+using Logic;
 using Microsoft.AspNetCore.Mvc;
+using ViewIntersfaces;
+using Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,25 +15,31 @@ namespace Api.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
-        List<ArticleModel> articles = new List<ArticleModel>
+        private readonly IArticle _articleCollection;
+
+        public ArticleController(IArticle articleCollection)
         {
-            new ArticleModel {Author = "Leo", Article = "YESS", Id = 1, Title = "TesT"},
-            new ArticleModel {Author = "Leo", Article = "hopelijk", Id = 2, Title = "TesT1"},
-            new ArticleModel {Author = "Leo", Article = "werkt t", Id = 3, Title = "TesT2"}
-        };
+            _articleCollection = articleCollection;
+        }
+        //List<ArticleModel> articles = new List<ArticleModel>
+        //{
+        //    new ArticleModel {Author = "Leo", Article = "YESS", Id = 1, Title = "TesT"},
+        //    new ArticleModel {Author = "Leo", Article = "hopelijk", Id = 2, Title = "TesT1"},
+        //    new ArticleModel {Author = "Leo", Article = "werkt t", Id = 3, Title = "TesT2"}
+        //};
 
         // GET: api/article
         [HttpGet]
         public IEnumerable<ArticleModel> GetAllArticles()
         {
-            return articles;
+            return _articleCollection.GetArticles();
         }
 
         // GET api/article/5
         [HttpGet("{id}")]
         public IActionResult GetArticle(int id)
         {
-            var article = articles.FirstOrDefault((a) => a.Id == id);
+            var article = _articleCollection.GetArticle(id);
             if (article == null)
             {
                 return NotFound();
@@ -46,19 +54,21 @@ namespace Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Invalid data.");
 
-            articles.Add(article);
+            _articleCollection.AddArticle(article);
 
             return Ok();
         }
 
         // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public IActionResult Update(ArticleModel article)
         {
+            _articleCollection.UpdateArticle(article);
+            return Ok();
         }
 
         // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(int id)
         {
         }

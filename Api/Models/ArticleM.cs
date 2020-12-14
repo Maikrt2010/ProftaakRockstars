@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Api.Models
 {
-    public class ArticleModel
+    public class ArticleM
     {
         public int Id { get; set; }
         [Required]
