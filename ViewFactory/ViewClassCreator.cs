@@ -1,5 +1,6 @@
 ﻿using Logic;
 using System;
+using ViewIntersfaces;
 
 namespace ViewFactory
 {
@@ -7,8 +8,16 @@ namespace ViewFactory
     {
         public static ArticleCollection CreateArticleCollection()
         {
-            var articleCollection = new ArticleCollection();
-            return articleCollection;
+            var articlecollection = new ArticleCollection();
+            return articlecollection;
         }
+
+        //private static IArticle Iarticle;
+
+        //public static IArticle Article
+        //{
+        //    get { return Iarticle = new ArticleCollection();
+        //}
+        //}
     }
 }

@@ -20,6 +20,7 @@ namespace Api.Controllers
         {
             _articleCollection = articleCollection;
         }
+
         //List<ArticleModel> articles = new List<ArticleModel>
         //{
         //    new ArticleModel {Author = "Leo", Article = "YESS", Id = 1, Title = "TesT"},
