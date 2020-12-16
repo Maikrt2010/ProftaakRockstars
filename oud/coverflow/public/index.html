@@ -10,64 +10,9 @@
         referrerpolicy="origin"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/article.css">
-    <link rel="stylesheet" href="/css/tags-input.css">
+    <link rel="stylesheet" href="/css/tags.css">
+
     <div id="hero"></div>
-    <style>
-        .tags-input-wrapper {
-            background: transparent;
-            padding: 10px;
-            border-radius: 4px;
-            max-width: 400px;
-            border: 1px solid #ccc
-        }
-
-        .tags-input-wrapper input {
-            border: none;
-            background: white;
-            outline: none;
-            width: 100%;
-        }
-
-        .tags-input-wrapper .tag {
-            display: inline-block;
-            background-color: #F3E300;
-            color: rgb(0, 0, 0);
-            font-size: 14px;
-            border-radius: 40px;
-            padding: 0px 3px 0px 7px;
-            margin-right: 5px;
-            margin-bottom: 7px;
-            box-shadow: 0 5px 15px -2px rgba(250, 14, 126, .7)
-        }
-
-        .tags-input-wrapper .tag a {
-            margin: 0 7px 3px;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .containerinput {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        .block {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #F3E300;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .titlemake{
-            text-align: center;
-            font-size:150%
-        }
-
-    </style>
 </head>
 
 <body>
@@ -104,22 +49,22 @@
     </ul>
 
 
-<div class="titlemake">
-    <br><h1>Een nieuw artikel maken</h1><br>
-</div>
-    <div class="containerinput">
-        <form id="post-data-form" method="post">
-            
-            <h3>Vul hier de titel van uw artikel in:</h3>
-            <input type="text" id="title" placeholder="Titel">
-            <h3>Vul hier uw naam in:</h3>
-            <input type="text" id="author" placeholder="Auteur">
-            <h3>Voeg hier tags toe:</h3>
-            <input type="text" id="tag-input" placeholder="Tags"><br>
-            <textarea id="texteditor"></textarea><br>
-            <button type="submit" class="block">Post Data</button>
-        </form>
+    <div class="titlemake">
+        <br>
+        <h1>Een nieuw artikel maken</h1><br>
     </div>
+
+    <form class="containerinput" id="my-form">
+        <h3>Vul hier de titel van uw artikel in:</h3>
+        <input type="text" id="title" name="Title" placeholder="Titel">
+        <h3>Vul hier uw naam in:</h3>
+        <input type="text" id="author" name="Author" placeholder="Auteur">
+        <h3>Voeg hier tags toe:</h3>
+        <input type="text" id="tag-input" name="Tag" placeholder="Tags"><br>
+        <textarea type="text" id="texteditor" name="Content" ></textarea><br>
+        <button id="buttonsubmit" type="submit" class="block">Post Data</button>
+</form>
+
 
 
 
@@ -325,44 +270,71 @@
             selector: "#texteditor",
             plugins: 'autoresize, image code',
             menubar: false,
-            theme_advanced_blockformats : 'h2,h3,p',
-            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image", 
+            theme_advanced_blockformats: 'h2,h3,p',
+            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image",
             placeholder: "Typ hier uw artikel ..."
         });
 
-        $(document).ready(function () {
-            let article;
-            let title;
-            let author;
-            let tag;
-            $("#post-data-form").submit(function (e) {
-                article = tinymce.get("texteditor").getContent();
-                title = document.getElementById("title").value;
-                author = document.getElementById("author").value;
-                tag = document.getElementById("tag-input").value;
-                const data = { article, title, author, tag };
-                const options = {
+</script>
+        
+
+
+
+
+
+
+
+
+    
+    <script>
+        (function($){
+            function processForm(e) {
+                $('#texteditor').html(tinymce.get('texteditor').getContent());
+                var f = $(this).parents("my-form");
+                var action = f.attr("action");
+                var serializedForm = f.serialize();
+
+                $.ajax({
+                    url: 'https://localhost:5001/api/Article',
                     method: 'POST',
-                    body: JSON.stringify(data),
+                    dataType: 'json',
+                    
+                    data: {
+                        articleID: 3,
+                        title: 'titel',
+                        author: 'Auteur',
+                        content: 'content'
+                    },
                     headers: {
-                        "Content-Type": "application/json"
+                        "Access-Control-Allow-Origin": "*"
+                    },
+                    succes: function (data){
+                        console.log(data);
                     }
-                }
-                title = "<h1 style= \"font-size:150px; text-align:center\">" + title + "</h1>";
-                document.body.innerHTML = title + article;
-                fetch('/api', options);
-                return false;
-            });
-        });
+                });
+                // $.ajax({
+                //     url: 'https://localhost:44376/api/Article',
+                //     dataType: 'text',
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data: $("#my-form").serialize(),
+                //     //data: $('#texteditor').html( tinymce.get('texteditor').getContent() ),
+                //     success: function (data, textStatus, jQxhr) {
+                //         $('#response pre').html(data);
+                //     },
+                //     error: function (jqXhr, textStatus, errorThrown) {
+                //         console.log(errorThrown);
+                //     }
+                // });
 
+                e.preventDefault();
+            }
 
-    </script>
+        $('#my-form').submit( processForm );
+    })(jQuery);
 
+</script>
 
-
-
-
-    <!-- <script src="/js/tags-input.js"></script> -->
 
     <script>
         var tagInput1 = new TagsInput({

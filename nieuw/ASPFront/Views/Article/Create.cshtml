@@ -297,17 +297,37 @@
             title = document.getElementById("title").value;
             author = document.getElementById("author").value;
             tag = document.getElementById("tag-input").value;
-            const data = { article, title, author, tag };
-            const options = {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    "Content-Type": "application/json"
-                }
+
+            
+
+            async function postData(article, title, author, tag) {
+                const data = { article, title, author, tag };
+                const url = 'https://localhost:44376/api/Article'
+                var response = await fetch(url, {
+                    method: 'POST',
+                    cache: 'no-cache',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                response = response.json();
+                return response;
             }
             title = "<h1 style= \"font-size:150px; text-align:center\">" + title + "</h1>";
             document.body.innerHTML = title + article;
-            fetch('/api', options);
+            //const data = { article, title, author, tag };
+            //const options = {
+            //    method: 'POST',
+            //    body: JSON.stringify(data),
+            //    headers: {
+            //        "Content-Type": "application/json"
+            //    }
+            //}
+            //return options.json();
+            //title = "<h1 style= \"font-size:150px; text-align:center\">" + title + "</h1>";
+            //document.body.innerHTML = title + article;
+            //fetch('/api', options);
             return false;
         });
     });
