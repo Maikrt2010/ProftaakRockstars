@@ -61,41 +61,41 @@
                 var action = f.attr("action");
                 var serializedForm = f.serialize();
 
-                // $.ajax({
-                //     url: 'https://localhost:5001/api/Article',
-                //     method: 'POST',
-                //     dataType: 'json',
-                    
-                //     data: {
-                //         articleID: 3,
-                //         title: 'titel',
-                //         author: 'Auteur',
-                //         content: 'content'
-                //     },
-                //     headers: {
-                //         "Access-Control-Allow-Origin": "*"
-                //     },
-                //     succes: function (data){
-                //         console.log(data);
-                //     }
-                // });
                 $.ajax({
-                    url:'https://localhost:5001/api/Article',
-                    dataType: 'text',
-                    type: 'post',
+                    url: 'https://localhost:5001/api/Article',
+                    method: 'POST',
                     dataType: 'json',
-                    data: $("#my-form").serialize(),
-                    //data: $('#texteditor').html( tinymce.get('texteditor').getContent() ),
+                    
+                    data: {
+                        articleID: 3,
+                        title: 'titel',
+                        author: 'Auteur',
+                        content: 'content'
+                    },
                     headers: {
                         "Access-Control-Allow-Origin": "*"
                     },
-                    success: function (data, textStatus, jQxhr) {
-                        $('#response pre').html(data);
-                    },
-                    error: function (jqXhr, textStatus, errorThrown) {
-                        console.log(errorThrown);
+                    succes: function (data){
+                        console.log(data);
                     }
                 });
+                // $.ajax({
+                //     url:'https://localhost:5001/api/Article',
+                //     dataType: 'text',
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data: $("#my-form").serialize(),
+                //     //data: $('#texteditor').html( tinymce.get('texteditor').getContent() ),
+                //     headers: {
+                //         "Access-Control-Allow-Origin": "*"
+                //     },
+                //     success: function (data, textStatus, jQxhr) {
+                //         $('#response pre').html(data);
+                //     },
+                //     error: function (jqXhr, textStatus, errorThrown) {
+                //         console.log(errorThrown);
+                //     }
+                // });
 
                 e.preventDefault();
             }
