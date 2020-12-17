@@ -1,145 +1,42 @@
 coverflow('container').setup({
-    item: 5,
-    playlist: [{
-            "title": "Serverless webhosting met AWS Amplify",
-            "description": "Jeroen de Deken",
-            "image": "/img/centralize-state-squared.jpg",
-            "link": "google.com",
-            "tag": "tag1"
-        },
-        {
-            "title": "Cloud center of excellence (CCOE)",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-08/header_1.jpg",
-            "link": "http://luwes.co/",
-            "tag": "tag2"
-        },
-        {
-            "title": "Lazy loading with Angular",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/530x530/public/2020-06/Robin%20Tienhoven_0.jpg",
-            "link": "ArticleLazyLoading.html",
-            "tag": "tag3"
-        },
-        {
-            "title": "Van Devops naar Devsecops",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/header.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Devops starter",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/devops%20code%20header_1.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Security by design bij informatiesystemen",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-04/Tech%20Burst%20omslagfoto%20.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "HTTP-store with Angular & RXJS",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/centralize-state-squared.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Monitor residential climate with Raspberry Pi",
-            "description": "Pim Hazebroek",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/raspberry-pi-squared.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Themes in nativescript with webpack",
-            "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/NativeScript-6.0-1024x684_0.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Versimpel je gebruik van VM-applicaties",
-            "description": "Bart Kooijmans",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-12/sea-wood-sunset-boat-lake-river-509292-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Wijnproeven met ML.net",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/computer-work-wine-glass-cup-drink-472371-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Een library migreren naar JPMS",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-08/java_1.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Een eenvoudig genetisch algoritme",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/genetisch-algoritme_0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "De groene ontwikkelaar",
-            "description": "Robin Gordijn",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/binary-code-binary-binary-system-byte-bits-administrator-1458885-pxhere.com__1.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Structured logging in een .net applicatie",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/architecture-structure-sky-window-glass-view-877703-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Maven version rules delen tussen projecten",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/laptop-desk-macbook-writing-working-technology-860609-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Van niets tot full-web-app in 10 kliks!",
-            "description": "Marco Vervoort",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/computer-technology-number-memory-electronic-tech-1292524-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag2"
-        },
-        {
-            "title": "Dit is nieuw in .net core 3.0",
-            "description": "Vincent Bitter",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/photo-1517148815978-75f6acaaf32c.jpg",
-            "link": "",
-            "tag": "tag3"
-        },
-        {
-            "title": "Software is niet voor eeuwig",
-            "description": "Lars Stolwijk",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Lesgeven, eenvoud, kwalitatieve code",
-            "description": "Venkat Subramaniam",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/venkat.jpg",
-            "link": "",
-            "tag": "tag2"
-        }
+    item: 0,
+    playlist: [
+    {
+        "title": "Software is niet voor eeuwig",
+        "description": "Lars Stolwijk",
+        "image": "https://lh3.googleusercontent.com/h8Rr0KVbjySSM6Jc2ypNbAW8Akb1HeG1Lh365VsZo-dQCITc7j_M1ObfpaRj6iaL71ix4eHWrtfC-J-MMUA0llLPpwSQM5_j4rARRaPtnoDdEqgakXCIpBOZhivfixhoq5CxSLypQcmImpsD-bNDwd3esadm21K9Path18a_QpXuf34VzIBVAUZJ79qd_FKlV4R7QG3q23T6VR1AyP5sWhHd63ADe-oghz6OR8_0J2eh5WEYtKIzflQ_j5arZrK1Gql4a1c9-vy_Ql7OZy8ipo3kiVIK7E7AQiQd6ywWqLLL1P-B68fPATQFGfg4XwsPnO3oaxL5Y1dh5iDCyUh7xpYd-1nV_u9R0Ov3oC1B92t03hY473l_9gb6slDmXMIXUBbgb8ow2yJEF0TfpgUAoYyLIlzJF4Ob765RsEsD1stUtFpwJtt-E8wUA2ifdfpl_jqLf3ne8pvdla8B6ABJYMvdOxs4bU1R1z0zzD5cJ7wJEjRQUnsblXMkzKp3n1AAiagbqYYik86SykgpqkZtaCXk1EvRQFE7lZWtYi1A9iR7h7ZCDhCZr7ViOL_t-FqFiZlkSdEaudK6r6-vll0n9iSOOW68v-QPm4RDLi4UsSXXWXSz4E05cI9_LhlSfEh8Nr250gvd2pkV0r5agLq2jAX7JUCyjKvgBbNbaRSniWlGOuoFKZef5dXQG8F2=s459-no?authuser=0",
+        "link": "ArticleLazyLoading.html",
+        "tag": "tag3"
+    }
+    // ,
+    // {
+    //     "title": "Van Devops naar Devsecops",
+    //     "description": "Christiaan Nieuwlaat",
+    //     "image": "https://lh3.googleusercontent.com/4XvTP6fCprTfJoPLQs7z4JO2F3DQOvPuIfV0_w-abOIxMvC-CL_RILChzQTskSKV8SBOZiI4mHdx9u9foXUJ80kokZz2J_fSBlJCyrBY-u9pbtKt3-gahi8lr-dqsemyb7dIakI40AnwqlfcbcDrmfdfCxeLvPDHLe-B7NJ2udnwYQ2iZ5Tdpb7RhUguokMIK4OxBDlrmvIh7iDnNaVUIHDCDZVclm0NEKrMcv0yhy5YEQ0HLO4rGyL-F0wEI89CW0sTYj3lgCdPKcuBzo_6USy5hsCCj8X1N8TQUirrIc5FteBfQirC0dht9Cz3BoiVL3pxZokirNqGH4f7fxhpIRzfSBoG4fkwmmsLKZA76JaTt5GmRiD0LJ8XKre5NijUYwIK0azQJlPlHNIH9_Ohl41HUXe0YKLHO2Cm0EzWFsv5w58UEIJ354Vj7NDqF2gtfp1TW19xkbsL_YNxiRLNbfK-S2IM-WyE9IDwg3Y89NRmfXR2MaFXoXStneKM-yNAsn0ecb_35KowEP7ly38ItqHvGsTFnu0inrmG2Q7Ey6SURM-orbunEMYCrzI9_DJZPeIZUE0uNKfsydVkW18ScT0j_mwwZA7NAYgWg84p9-w49fp3iG2A2wpdXFxxz3OQED-0QOJ0_5oIcfneCCQveBzqhwLX67WmNSSZUhB9FQqDbEWoifi-hSB0Fj0_=s459-no?authuser=0",
+    //     "link": "",
+    //     "tag": "tag1"
+    // },
+    // {
+    //     "title": "Devops starter",
+    //     "description": "Marco Vervoort",
+    //     "image": "https://lh3.googleusercontent.com/7Hcyb1n-TznpdnUOBJDpXossnL9dcIfYKo3yfqRQCti_u5399kja3nWIRiCECb_tBUyYS5Wy9lMADmxn6h4V4JAN0cWgWhloedojpHnoVxHk-FhrmduGmGr5tvslb4kEtTc35hhAR745ZOOpJX2BDyceT-xn--Z3JkNywVObeU_5F-Po90jSepXoLQZiilQ6ak9bKC3m2kmL36_OlmWoS4uea8mxT0BT-q8pi3VkqWNnxFBk7jUiGrLlQy6uOb8EbmDMcUQX55bIJBIW03V95Yoo0JUwY7RTLuGE7cm2iZ_dAS0NoaBA-XLgQB4Mm7FLWv7lFWqdxoB80_mpXH21JBhJ98Hz1LHuIB4jG9fslEzbbGvZP7EMGMnUYZpUXekZ5FKoBtq9Rd_7KwYJr-4QTImDXOj1KUkGKHwMrMcLmLzwjb8llr68DdqtRlel5b_kMvQguRMYbDmGCcMbzmMTtLZZI4K_9miSSEQxgr7PPAqDe8j5EibBuQo5bs_a_Rfy8c4Gko1Dx7KnU_ez86izb3nzSRe-iYT8SAl3vXthi__Dg5sUSNmBlnzrWIyxjMn6TA_T8HRNChRy555xW5m9aJISKqHopPCayThqrv7r8N8UsCud395ZofTImWfz6_50qoj2_uu4x094euHUobVpzPK6qcSqdq0BZnwXD8-qI6DXufACT_tHwc8zGvrp=s459-no?authuser=0",
+    //     "link": "",
+    //     "tag": "tag2"
+    // },
+    // {
+    //     "title": "HTTP-store with Angular & RXJS",
+    //     "description": "Robin van Tienhoven",
+    //     "image": "https://lh3.googleusercontent.com/_OSqgtY6gMyvlZWAdsH9KH_oUeRvshlYN5O_CViAvnrZr1d095q-97XviSY9_aL06O3dvmv4EKo0p4-YDt-BDl4FQTlOdbcx6i8KHI1pso7IDdYUwq704OP07W1Fciu8MB8b2Nt-Iko0kWIBsTlJevijUbZ-UapKKVU_bdYvF494Uo4Fb0039LQdlc6UqSoUSMT57yBRJxPCgHmk21XaOSrQmjHUiU9zrBzVbnQCbHTHsB7boYVBGqQgV2bVtOXQhnnYyU34eWTUQ3qh_kIEH76LGW4a2E2c7BCwgAlG8unkhp96wwQsL_SznYK9GzelEIdeD53kAJOuLA9BkDexNDU7QaicLr68uktCOCjuRRWMq15UxixleYLQQbJdB_lyMVmZm7TUbyeMZ5h3LfCmlAlLyhey-_T9QkMKF6YHwb0CgTNAnwqjf1ib5mNLeP5zgb9Vky5WHnGKgvSZ0iUTJJDpxgUOvFhuVO59OATwqufAdhoS-lghjgfMK1WitNJAaRk_mAwUezyIkV22avE1xTZFph86C8eFAIIFMBQyqfoJcaIEMMtxWkpwaLpUsfs959cvM96dx-J0ZiR64kUifiDfhMzMBIFKmr5hsd3Cw8YXjvDyTHGKJtnOMjW2_W593tMLlVaufW_GhcSqw12u7yPNUCs-k-yE1EK796KknuD91DwkqJ1h7x16syh4=s459-no?authuser=0",
+    //     "link": "",
+    //     "tag": "tag1"
+    // },
+    // {
+    //     "title": "Monitor residential climate with Raspberry Pi",
+    //     "description": "Pim Hazebroek",
+    //     "image": "https://lh3.googleusercontent.com/xw3iBOfTcYa4Pq110tZa3f1LLHP5k3oJOqeiWZypTJmNhk7u9c1POdaqrCU8g7bSkg64mdK82dgNpEzc8yc4mEmbuj1rJmf2Gr_KhMhKpmytrr4mi-Q61AzvL_WMLO_MZzQBhhL9bYRcyYfTFn-7Y9tLC3SiignHO0mRJgPA2K0cybuCfph690dWXmC5yzulsrOsJMBbzXaYe5av1gWX8gUp4NQvWMZbZKZqUzRKez0LmJcOUPc45J_AXVF4v4Y_P6_on6lYh5V1FzeSQJ3eCM9ou3nGvIt2Ii9kVDc6F-qaaM3O79FATGW5szOGKr8XJ6h3_YPRcz9GXFO7D8_rR2X7cmOjwKVAWQgAC9kXsofp7CLNA8Q67iauA7vI9HY1IH5lec4hXrwAjYDWx5TTDnOt8-1pXiNaeUSt2SQXQaoWUaWW0PKhF5wqfl7_KekChlCCXwD5zDKed21g24owcZjE9syJ35-kXBp-0_ipbDrAHMohugq9iXKSLhNyc0pfHnaRqz5QGD0MtALCQ-5mA-n1zbfxzydmj6ZZ8W262TdgPjq3rPdDdZ481u9sAEuguDchG0alIoZhdD0w38KYirr7EoZZNWcTkkzr7Bdy2X50QTZWDWmmtcjTL0vGaEYcn6JmZ5tKGMyPYddW6_2qUacvqeIAMO4KjEQo3RuqHhIPHINCpkaMEv8pkejK=s459-no?authuser=0",
+    //     "link": "",
+    //     "tag": "tag2"
+    // }
 
     ],
     width: window.innerWidth,

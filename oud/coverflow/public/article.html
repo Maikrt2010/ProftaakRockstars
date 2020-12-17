@@ -18,16 +18,14 @@
 <body>
     <div id="navbar"></div>
 
-    <h1 id="titleData"></h1>
-    <h2 id="authorData"></h2>
-    <div id="articleData">
-
-    </div>
+    <h1 style="text-align:center; font-size: 2.5rem" id="titleData"></h1>
+    <h2 style="text-align:center" id="authorData"></h2>
+    <p style= "margin-left: 30%; margin-right: 30%" id="articleData"></p><br><br>
 
 
     <script>
         $.ajax({
-            url: 'http://localhost:5001/api/Article/',
+            url: 'http://localhost:5001/api/Article/2',
             method: 'GET',
             dataType: 'json',
 
