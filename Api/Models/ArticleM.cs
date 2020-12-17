@@ -14,7 +14,7 @@ namespace Api.Models
         [Required]
         public string Author { get; set; }
         [Required]
-        public string Article { get; set; }
+        public string article { get; set; }
         public string Tag { get; set; }
     }
 }
