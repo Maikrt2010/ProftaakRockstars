@@ -32,6 +32,7 @@ namespace Api.Controllers
 
         // GET: api/article
         [HttpGet]
+        [EnableCors("AllowOrigin")]
         public IEnumerable<ArticleModel> GetAllArticles()
         {
             return _articleCollection.GetArticles();
@@ -39,6 +40,7 @@ namespace Api.Controllers
 
         // GET api/article/5
         [HttpGet("{id}")]
+        [EnableCors("AllowOrigin")]
         public IActionResult GetArticle(int id)
         {
             var article = _articleCollection.GetArticle(id);

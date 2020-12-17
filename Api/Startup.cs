@@ -35,16 +35,22 @@ namespace Api
             services.AddScoped<IArticle, ArticleCollection>();
             services.AddScoped<IArticleRepository, ArticleRepository>();
             services.AddDbContextPool<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44376"));
-            });
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44376", "http://localhost:5500"));
+            //});
+
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("Policy11",
+            //    builder => builder.WithOrigins("https://localhost:44376", "http://localhost:5500"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,12 +61,13 @@ namespace Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(options => options.AllowAnyOrigin());
-            app.UseCors(options => options.WithOrigins("https://localhost:44376"));
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(options => options.AllowAnyOrigin());
+            //app.UseCors(options => options.WithOrigins("https://localhost:44376", "http://localhost:5500"));
+            //app.UseCors("Policy11");
 
             app.UseAuthorization();
 
