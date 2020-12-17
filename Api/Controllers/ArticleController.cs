@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ViewIntersfaces;
 using Models;
@@ -12,6 +13,7 @@ namespace Api.Controllers
 {
     [Route("api/article")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class ArticleController : ControllerBase
     {
         private readonly IArticle _articleCollection;
