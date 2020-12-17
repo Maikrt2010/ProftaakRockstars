@@ -53,6 +53,7 @@ namespace Api.Controllers
 
         // POST api/article
         [HttpPost]
+        [EnableCors("AllowOrigin")]
         public IActionResult PostNewArticle(ArticleModel article)
         {
             if (!ModelState.IsValid)
