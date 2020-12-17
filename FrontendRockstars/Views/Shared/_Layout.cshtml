@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ASPFront</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/article.css" rel="stylesheet" type="text/css" />
+    <link href="/css/coverflow.css" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <section class="hero">
+            <div class="herocontainer">
+                <figure class="heroimage">
+                    <a href="/">
+                        <img src="https://www.teamrockstars.nl/sites/default/files/global_settings/logo-rockstars%402x_2.png">
+                    </a>
+                </figure>
+
+                <div class="titlebox">
+
+                    <h1 class="title titletext">
+                        TECHBURST
+                    </h1>
+
+                    <h2 class="subtitle titletext">
+                        DON'T KEEP IT IN THE BUBBLE - BURST IT
+                    </h2>
+                </div>
+            </div>
+
+        </section>
+
+        <ul class="navbar">
+            <li><a href="/Home/Index">Home</a></li>
+            <li>
+                <button class="dropbtn" onclick="myFunction()"> Categories </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/home/Tag1">Cloud</a>
+                    <a href="/home/Tag2">Articles</a>
+                    <a href="/home/Tag3">Tech</a>
+                </div>
+            </li>
+            <li><a href="/article/create">Artikel maken</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="/js/coverflow.js" defer></script>
+    <script src="/js/dropdown.js" defer></script>
+    <script src="https://luwes.github.io/js-cover-flow/coverflow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
