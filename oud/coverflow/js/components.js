@@ -5,6 +5,6 @@
 
 
 $(function() {
-    $("#navbar").load("/components/navbar.html");
-    $("#hero").load("/components/hero.html");
+    $("#navbar").load("/oud/coverflow/components/navbar.html");
+    $("#hero").load("/oud/coverflow/components/hero.html");
 });

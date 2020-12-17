@@ -6,14 +6,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://cdn.tiny.cloud/1/x5qtbwjjub75e8k47llgn2qnoctqja5ugz2qlr5cn7ctcj3p/tinymce/5/tinymce.min.js"
-        referrerpolicy="origin"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/article.css">
-    <link rel="stylesheet" href="/css/tags.css">
+    <script src="https://cdn.tiny.cloud/1/x5qtbwjjub75e8k47llgn2qnoctqja5ugz2qlr5cn7ctcj3p/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="/oud/coverflow/css/style.css">
+    <link rel="stylesheet" href="/oud/coverflow/css/article.css">
+    <link rel="stylesheet" href="/oud/coverflow/css/tags.css">
 
-    <script src="/js/components.js" defer></script>
-    <script src="/js/tags.js" defer></script>
+    <script src="/oud/coverflow/js/components.js" defer></script>
+    <script src="/oud/coverflow/js/tags.js" defer></script>
     <div id="hero"></div>
 
 </head>
@@ -33,15 +32,20 @@
         <input type="text" id="author" name="Author" placeholder="Auteur">
         <h3>Voeg hier tags toe:</h3>
         <input type="text" id="tag-input" name="Tag" placeholder="Tags"><br>
-        <textarea type="text" id="texteditor" name="Content" ></textarea><br>
+        <textarea type="text" id="texteditor" name="Content"></textarea><br>
         <button id="buttonsubmit" type="submit" class="block">Post Data</button>
-</form>
+    </form>
+    <h1 id="titleData"></h1>
+    <h2 id="authorData"></h2>
+    <div id="articleData">
+
+    </div>
+
 
 
 
 
     <script>
-        
         tinymce.init({
             selector: "#texteditor",
             plugins: 'autoresize, image code',
@@ -50,11 +54,10 @@
             toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image",
             placeholder: "Typ hier uw artikel ..."
         });
-
-</script>
+    </script>
 
     <script>
-        (function($){
+        (function($) {
             function processForm(e) {
                 $('#texteditor').html(tinymce.get('texteditor').getContent());
                 var f = $(this).parents("my-form");
@@ -62,22 +65,17 @@
                 var serializedForm = f.serialize();
 
                 $.ajax({
-                    url: 'https://localhost:5001/api/Article',
-                    method: 'POST',
+                    url: 'http://localhost:5001/api/Article/1',
+                    method: 'GET',
                     dataType: 'json',
-                    
-                    data: {
-                        articleID: 3,
-                        title: 'titel',
-                        author: 'Auteur',
-                        content: 'content'
-                    },
-                    headers: {
-                        "Access-Control-Allow-Origin": "*"
-                    },
-                    succes: function (data){
+
+
+                    success: function(data, textStatus, jQxhr) {
                         console.log(data);
-                    }
+                        document.getElementById("titleData").innerHTML = data.title;
+                        document.getElementById("authorData").innerHTML = data.author;
+                        document.getElementById("articleData").innerHTML = data.content;
+                    },
                 });
                 // $.ajax({
                 //     url:'https://localhost:5001/api/Article',
@@ -100,14 +98,12 @@
                 e.preventDefault();
             }
 
-        $('#my-form').submit( processForm );
-    })(jQuery);
-
-</script>
+            $('#my-form').submit(processForm);
+        })(jQuery);
+    </script>
 
 
     <script>
-
     </script>
 
 

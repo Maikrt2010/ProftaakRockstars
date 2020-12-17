@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Article editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/oud/coverflow/css/style.css">
+    <link rel="stylesheet" href="/oud/coverflow/css/article.css">
+    <link rel="stylesheet" href="/oud/coverflow/css/tags.css">
+
+    <script src="/oud/coverflow/js/components.js" defer></script>
+    <div id="hero"></div>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <h1 id="titleData"></h1>
+    <h2 id="authorData"></h2>
+    <div id="articleData">
+
+    </div>
+
+
+    <script>
+        $.ajax({
+            url: 'http://localhost:5001/api/Article/',
+            method: 'GET',
+            dataType: 'json',
+
+
+            success: function(data, textStatus, jQxhr) {
+                console.log(data);
+                document.getElementById("titleData").innerHTML = data.title;
+                document.getElementById("authorData").innerHTML = data.author;
+                document.getElementById("articleData").innerHTML = data.content;
+            },
+        });
+    </script>
+
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>
