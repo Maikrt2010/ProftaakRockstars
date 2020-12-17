@@ -1,53 +1,12 @@
 coverflow('container').setup({
     item: 0,
-    playlist: [{
-            "title": "Serverless webhosting met AWS Amplify",
-            "description": "Jeroen de Deken",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-10/802855-637330036210103252-16x9_1.jpg",
-            "link": "google.com",
-            "tag": "tag1"
-        },
+    playlist: [
         {
-            "title": "Van Devops naar Devsecops",
-            "description": "Christiaan Nieuwlaat",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-06/header.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "HTTP-store with Angular & RXJS",
+            "title": "Lazy loading with Angular",
             "description": "Robin van Tienhoven",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2020-03/centralize-state-squared.jpg",
+            "image": "https://lh3.googleusercontent.com/h8Rr0KVbjySSM6Jc2ypNbAW8Akb1HeG1Lh365VsZo-dQCITc7j_M1ObfpaRj6iaL71ix4eHWrtfC-J-MMUA0llLPpwSQM5_j4rARRaPtnoDdEqgakXCIpBOZhivfixhoq5CxSLypQcmImpsD-bNDwd3esadm21K9Path18a_QpXuf34VzIBVAUZJ79qd_FKlV4R7QG3q23T6VR1AyP5sWhHd63ADe-oghz6OR8_0J2eh5WEYtKIzflQ_j5arZrK1Gql4a1c9-vy_Ql7OZy8ipo3kiVIK7E7AQiQd6ywWqLLL1P-B68fPATQFGfg4XwsPnO3oaxL5Y1dh5iDCyUh7xpYd-1nV_u9R0Ov3oC1B92t03hY473l_9gb6slDmXMIXUBbgb8ow2yJEF0TfpgUAoYyLIlzJF4Ob765RsEsD1stUtFpwJtt-E8wUA2ifdfpl_jqLf3ne8pvdla8B6ABJYMvdOxs4bU1R1z0zzD5cJ7wJEjRQUnsblXMkzKp3n1AAiagbqYYik86SykgpqkZtaCXk1EvRQFE7lZWtYi1A9iR7h7ZCDhCZr7ViOL_t-FqFiZlkSdEaudK6r6-vll0n9iSOOW68v-QPm4RDLi4UsSXXWXSz4E05cI9_LhlSfEh8Nr250gvd2pkV0r5agLq2jAX7JUCyjKvgBbNbaRSniWlGOuoFKZef5dXQG8F2=s459-no?authuser=0",
             "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Versimpel je gebruik van VM-applicaties",
-            "description": "Bart Kooijmans",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-12/sea-wood-sunset-boat-lake-river-509292-pxhere.com__0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Een eenvoudig genetisch algoritme",
-            "description": "Vincent Hendriks",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-06/genetisch-algoritme_0.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Maven version rules delen tussen projecten",
-            "description": "Sven Haster",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-05/laptop-desk-macbook-writing-working-technology-860609-pxhere.com_.jpg",
-            "link": "",
-            "tag": "tag1"
-        },
-        {
-            "title": "Software is niet voor eeuwig",
-            "description": "Lars Stolwijk",
-            "image": "https://www.teamrockstars.nl/sites/default/files/styles/380x380/public/2019-04/0.jpg",
-            "link": "",
-            "tag": "tag1"
+            "tag": "tag3"
         }
 
     ],
