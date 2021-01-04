@@ -166,6 +166,8 @@ body {
 .navbar>li>a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .titletext {
@@ -177,7 +179,7 @@ body {
     background-color:var(--main-bg-color);
     color: white;
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
     border: none;
     cursor: pointer;
   }
@@ -308,3 +310,15 @@ body {
 .has-text-white {
     color: white !important;
 }
+
+
+#rdcorner{
+    border-radius: 25px;
+    background: #c2cf0d;
+    padding: 10px; 
+    width: 65px;
+    height: 15px; 
+    color: #000;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+

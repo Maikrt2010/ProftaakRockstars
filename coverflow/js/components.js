@@ -6,5 +6,7 @@
 
 $(function() {
     $("#navbar").load("../components/navbar.html");
-    $("#hero").load("../components/hero.html");
+    // $("#hero").load("../components/hero.html");
+    $("#menubar").load("../components/menubar.html");
+    
 });
