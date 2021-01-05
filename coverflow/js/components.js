@@ -5,8 +5,8 @@
 
 
 $(function() {
-    $("#navbar").load("../components/navbar.html");
+    $("#navbar").load("../components/navbarNew.html");
     // $("#hero").load("../components/hero.html");
-    $("#menubar").load("../components/menubar.html");
+    $("#videobar").load("../components/HomeVideo.html");
     
 });

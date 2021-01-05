@@ -179,7 +179,7 @@ body {
     background-color:var(--main-bg-color);
     color: white;
     font-size: 16px;
-    font-family: font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    font-family:  "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     border: none;
     cursor: pointer;
   }
@@ -314,7 +314,7 @@ body {
 
 #rdcorner{
     border-radius: 25px;
-    background: #c2cf0d;
+    background: #F3E300;
     padding: 10px; 
     width: 65px;
     height: 15px; 
