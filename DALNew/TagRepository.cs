@@ -23,7 +23,7 @@ namespace DAL
             return _context.Tags.SingleOrDefault(tag => tag.TagId == Id);
         }
 
-        public IEnumerable<TagModel> GetTag()
+        public IEnumerable<TagModel> GetTags()
         {
             return _context.Tags;
         }

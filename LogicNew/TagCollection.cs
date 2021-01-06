@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DALInterfaces;
+using Logic.Interfaces;
 using Models;
 
 namespace Logic
 {
-    public class TagCollection
+    public class TagCollection : ITagCollection
     {
         private ITagRepository tagRepository;
         public TagCollection()
