@@ -6,7 +6,7 @@ namespace DALInterfaces
     public interface ITagRepository
     {
         TagModel GetTag(int Id);
-        IEnumerable<TagModel> GetTag();
+        IEnumerable<TagModel> GetTags();
         void AddTag(TagModel tag);
         void RemoveTag(int Id);
         void UpdateTag(TagModel tag);
