@@ -8,8 +8,3 @@ let observer = new MutationObserver(function() {
     }
 });
 observer.observe(targetNode, { attributes: true, childList: true });
-
-
-//link naar artikel in knop
-let button = document.getElementById("articleButton");
-button.href = "http://127.0.0.1:5500/coverflow/public/article.html?article="
