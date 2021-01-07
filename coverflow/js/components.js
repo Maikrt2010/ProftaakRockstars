@@ -5,8 +5,9 @@
 
 
 $(function() {
-    $("#navbar").load("../components/navbarNew.html");
-    // $("#hero").load("../components/hero.html");
-    $("#videobar").load("../components/HomeVideo.html");
+    // $("#navbar").load("../components/navbarNew.html");
+    $("#hero").load("../components/hero.html");
+    $("#navbar").load("../components/navbar.html");
+    // $("#videobar").load("../components/HomeVideo.html");
     
 });
