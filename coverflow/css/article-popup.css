@@ -63,9 +63,8 @@ a.button {
     width: 50%;
 }
 
-
-/* #cover-image {
+#cover-container {
     height: 20%;
     width: 100%;
-    background-size: contain;
-} */
+    background-size: cover;
+}

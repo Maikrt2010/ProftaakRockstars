@@ -31,7 +31,7 @@ function createCoverItems(articles) {
         if (img) {
             imgUrl = img.src;
         } else {
-            imgUrl = "https://lh3.googleusercontent.com/4XvTP6fCprTfJoPLQs7z4JO2F3DQOvPuIfV0_w-abOIxMvC-CL_RILChzQTskSKV8SBOZiI4mHdx9u9foXUJ80kokZz2J_fSBlJCyrBY-u9pbtKt3-gahi8lr-dqsemyb7dIakI40AnwqlfcbcDrmfdfCxeLvPDHLe-B7NJ2udnwYQ2iZ5Tdpb7RhUguokMIK4OxBDlrmvIh7iDnNaVUIHDCDZVclm0NEKrMcv0yhy5YEQ0HLO4rGyL-F0wEI89CW0sTYj3lgCdPKcuBzo_6USy5hsCCj8X1N8TQUirrIc5FteBfQirC0dht9Cz3BoiVL3pxZokirNqGH4f7fxhpIRzfSBoG4fkwmmsLKZA76JaTt5GmRiD0LJ8XKre5NijUYwIK0azQJlPlHNIH9_Ohl41HUXe0YKLHO2Cm0EzWFsv5w58UEIJ354Vj7NDqF2gtfp1TW19xkbsL_YNxiRLNbfK-S2IM-WyE9IDwg3Y89NRmfXR2MaFXoXStneKM-yNAsn0ecb_35KowEP7ly38ItqHvGsTFnu0inrmG2Q7Ey6SURM-orbunEMYCrzI9_DJZPeIZUE0uNKfsydVkW18ScT0j_mwwZA7NAYgWg84p9-w49fp3iG2A2wpdXFxxz3OQED-0QOJ0_5oIcfneCCQveBzqhwLX67WmNSSZUhB9FQqDbEWoifi-hSB0Fj0_=s459-no?authuser=0"
+            imgUrl = "https://info.teamrockstars.nl/hs-fs/hubfs/raw_assets/public/TeamRockstars_June2020/images/logo-rockstars@2x_2.png?width=315&name=logo-rockstars@2x_2.png"
         }
 
         let summary = htmlContent.getElementsByTagName("p")[1]
