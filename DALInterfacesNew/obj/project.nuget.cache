@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FBGxe7HF43QHuH/bQXAq68UNLn0m9S40AKcowibFUO8yg1vvzmV2GS8TVojiNFQwiJi6ZPz9tkHAXFIaTZI2PA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kevin\\Documents\\GitHub\\ProftaakRockstars\\DALInterfacesNew\\DALInterfaces.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kevin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

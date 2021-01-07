@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-top: 60px;
+    margin-top: 58px;
     top: 0;
     left: 0;
     background: black;
@@ -41,7 +41,7 @@
 
 .nav-area{
     background: rgba(0, 0, 0, 0.9);
-    height: 60px;
+    height: 56px;
     position: absolute;
     width: 100%;
     z-index: 2; 
@@ -91,12 +91,23 @@
 }
 
 .banner-text{
-    position: fixed;
-    top: 35%;
+    z-index: 20;
+    margin-left: 2rem;
     text-align: center;
-    left: 25%;
+}
+
+.banner-container{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     z-index: 2;
 }
+
+
+
 
 .banner-text h2{
     color: #fff;
@@ -133,4 +144,34 @@
         padding-right: 3rem;
         padding-left: 3rem;
     }
+}
+
+
+
+.navbar {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    margin-top: 0;
+    z-index: 12;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.navbar>li {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.navbar>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
