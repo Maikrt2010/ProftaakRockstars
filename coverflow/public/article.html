@@ -26,8 +26,7 @@
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        // const id = urlParams.get('article')
-        const id = 51;
+        const id = urlParams.get('article')
         $.ajax({
             url: 'http://localhost:5001/api/Article/' + id,
             method: 'GET',
