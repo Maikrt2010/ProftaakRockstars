@@ -1,0 +1,12 @@
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\bin\Debug\netstandard2.1\ViewIntersfaces.deps.json
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\bin\Debug\netstandard2.1\ViewIntersfaces.dll
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\bin\Debug\netstandard2.1\ViewIntersfaces.pdb
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\bin\Debug\netstandard2.1\Models.dll
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\bin\Debug\netstandard2.1\Models.pdb
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.csprojAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.AssemblyInfoInputs.cache
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.AssemblyInfo.cs
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.csproj.CopyComplete
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.dll
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewIntersfacesNew\obj\Debug\netstandard2.1\ViewIntersfaces.pdb

@@ -1,0 +1,4 @@
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\LogicNew\obj\Debug\netstandard2.1\Logic.csprojAssemblyReference.cache
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\LogicNew\obj\Debug\netstandard2.1\Logic.AssemblyInfoInputs.cache
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\LogicNew\obj\Debug\netstandard2.1\Logic.AssemblyInfo.cs
+C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\LogicNew\obj\Debug\netstandard2.1\Logic.csproj.CoreCompileInputs.cache
