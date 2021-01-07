@@ -13,7 +13,6 @@ namespace Api.Controllers
 {
     [Route("api/article")]
     [ApiController]
-    [EnableCors("AllowOrigin")]
     public class ArticleController : ControllerBase
     {
         private readonly IArticle _articleCollection;
@@ -32,7 +31,7 @@ namespace Api.Controllers
 
         // GET: api/article
         [HttpGet]
-        [EnableCors("AllowOrigin")]
+        //[EnableCors("Policy1")]
         public IEnumerable<ArticleModel> GetAllArticles()
         {
             return _articleCollection.GetArticles();
@@ -40,7 +39,7 @@ namespace Api.Controllers
 
         // GET api/article/5
         [HttpGet("{id}")]
-        [EnableCors("AllowOrigin")]
+        //[EnableCors("Policy1")]
         public IActionResult GetArticle(int id)
         {
             var article = _articleCollection.GetArticle(id);
@@ -53,7 +52,7 @@ namespace Api.Controllers
 
         // POST api/article
         [HttpPost]
-        [EnableCors("AllowOrigin")]
+        //[EnableCors("Policy1")]
         public IActionResult PostNewArticle(ArticleModel article)
         {
             if (!ModelState.IsValid)

@@ -37,20 +37,17 @@ namespace Api
             services.AddDbContextPool<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44376", "http://localhost:5500"));
-            //});
 
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("Policy11",
-            //    builder => builder.WithOrigins("https://localhost:44376", "http://localhost:5500"));
-            //});
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+               {
+                   builder.WithOrigins("http://127.0.0.1:5500")
+                   .WithHeaders("Authorization")
+                   .AllowCredentials();
+               });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,9 +62,7 @@ namespace Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(options => options.AllowAnyOrigin());
-            //app.UseCors(options => options.WithOrigins("https://localhost:44376", "http://localhost:5500"));
-            //app.UseCors("Policy11");
+            app.UseCors();
 
             app.UseAuthorization();
 
@@ -75,6 +70,7 @@ namespace Api
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
