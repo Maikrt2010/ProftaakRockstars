@@ -24,8 +24,11 @@
 
 
     <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('article')
         $.ajax({
-            url: 'http://localhost:5001/api/Article/52',
+            url: 'http://localhost:5001/api/Article/' + id,
             method: 'GET',
             dataType: 'json',
 

@@ -1,130 +1,145 @@
-coverflow('container').setup({
-    item: 0,
-    playlist: [
-    {
-        "title": "Software is niet voor eeuwig",
-        "description": "Lars Stolwijk",
-        "image": "/img/Robin Tienhoven_0.jpg",
-        "link": "ArticleLazyLoading.html",
-        "tag": "tag3"
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+
+var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+};
+
+
+fetch("http://localhost:5001/api/Article/", requestOptions)
+    .then(response => response.json())
+    .then(result => createCoverItems(result))
+    .catch(error => console.log('error', error));
+
+
+
+function createCoverItems(articles) {
+    let articleList = [];
+    for (let i = 0; i < articles.length; i++) {
+        let article = articles[i];
+
+
+
+        let item = {
+            "title": article.title,
+            "description": article.author,
+            "image": "https://lh3.googleusercontent.com/4XvTP6fCprTfJoPLQs7z4JO2F3DQOvPuIfV0_w-abOIxMvC-CL_RILChzQTskSKV8SBOZiI4mHdx9u9foXUJ80kokZz2J_fSBlJCyrBY-u9pbtKt3-gahi8lr-dqsemyb7dIakI40AnwqlfcbcDrmfdfCxeLvPDHLe-B7NJ2udnwYQ2iZ5Tdpb7RhUguokMIK4OxBDlrmvIh7iDnNaVUIHDCDZVclm0NEKrMcv0yhy5YEQ0HLO4rGyL-F0wEI89CW0sTYj3lgCdPKcuBzo_6USy5hsCCj8X1N8TQUirrIc5FteBfQirC0dht9Cz3BoiVL3pxZokirNqGH4f7fxhpIRzfSBoG4fkwmmsLKZA76JaTt5GmRiD0LJ8XKre5NijUYwIK0azQJlPlHNIH9_Ohl41HUXe0YKLHO2Cm0EzWFsv5w58UEIJ354Vj7NDqF2gtfp1TW19xkbsL_YNxiRLNbfK-S2IM-WyE9IDwg3Y89NRmfXR2MaFXoXStneKM-yNAsn0ecb_35KowEP7ly38ItqHvGsTFnu0inrmG2Q7Ey6SURM-orbunEMYCrzI9_DJZPeIZUE0uNKfsydVkW18ScT0j_mwwZA7NAYgWg84p9-w49fp3iG2A2wpdXFxxz3OQED-0QOJ0_5oIcfneCCQveBzqhwLX67WmNSSZUhB9FQqDbEWoifi-hSB0Fj0_=s459-no?authuser=0",
+            "link": "http://127.0.0.1:5500/coverflow/public/article.html?article=" + article.articleId,
+            "tag": "programming"
+        }
+        articleList.push(item);
+
     }
-    // ,
-    // {
-    //     "title": "Van Devops naar Devsecops",
-    //     "description": "Christiaan Nieuwlaat",
-    //     "image": "https://lh3.googleusercontent.com/4XvTP6fCprTfJoPLQs7z4JO2F3DQOvPuIfV0_w-abOIxMvC-CL_RILChzQTskSKV8SBOZiI4mHdx9u9foXUJ80kokZz2J_fSBlJCyrBY-u9pbtKt3-gahi8lr-dqsemyb7dIakI40AnwqlfcbcDrmfdfCxeLvPDHLe-B7NJ2udnwYQ2iZ5Tdpb7RhUguokMIK4OxBDlrmvIh7iDnNaVUIHDCDZVclm0NEKrMcv0yhy5YEQ0HLO4rGyL-F0wEI89CW0sTYj3lgCdPKcuBzo_6USy5hsCCj8X1N8TQUirrIc5FteBfQirC0dht9Cz3BoiVL3pxZokirNqGH4f7fxhpIRzfSBoG4fkwmmsLKZA76JaTt5GmRiD0LJ8XKre5NijUYwIK0azQJlPlHNIH9_Ohl41HUXe0YKLHO2Cm0EzWFsv5w58UEIJ354Vj7NDqF2gtfp1TW19xkbsL_YNxiRLNbfK-S2IM-WyE9IDwg3Y89NRmfXR2MaFXoXStneKM-yNAsn0ecb_35KowEP7ly38ItqHvGsTFnu0inrmG2Q7Ey6SURM-orbunEMYCrzI9_DJZPeIZUE0uNKfsydVkW18ScT0j_mwwZA7NAYgWg84p9-w49fp3iG2A2wpdXFxxz3OQED-0QOJ0_5oIcfneCCQveBzqhwLX67WmNSSZUhB9FQqDbEWoifi-hSB0Fj0_=s459-no?authuser=0",
-    //     "link": "",
-    //     "tag": "tag1"
-    // },
-    // {
-    //     "title": "Devops starter",
-    //     "description": "Marco Vervoort",
-    //     "image": "https://lh3.googleusercontent.com/7Hcyb1n-TznpdnUOBJDpXossnL9dcIfYKo3yfqRQCti_u5399kja3nWIRiCECb_tBUyYS5Wy9lMADmxn6h4V4JAN0cWgWhloedojpHnoVxHk-FhrmduGmGr5tvslb4kEtTc35hhAR745ZOOpJX2BDyceT-xn--Z3JkNywVObeU_5F-Po90jSepXoLQZiilQ6ak9bKC3m2kmL36_OlmWoS4uea8mxT0BT-q8pi3VkqWNnxFBk7jUiGrLlQy6uOb8EbmDMcUQX55bIJBIW03V95Yoo0JUwY7RTLuGE7cm2iZ_dAS0NoaBA-XLgQB4Mm7FLWv7lFWqdxoB80_mpXH21JBhJ98Hz1LHuIB4jG9fslEzbbGvZP7EMGMnUYZpUXekZ5FKoBtq9Rd_7KwYJr-4QTImDXOj1KUkGKHwMrMcLmLzwjb8llr68DdqtRlel5b_kMvQguRMYbDmGCcMbzmMTtLZZI4K_9miSSEQxgr7PPAqDe8j5EibBuQo5bs_a_Rfy8c4Gko1Dx7KnU_ez86izb3nzSRe-iYT8SAl3vXthi__Dg5sUSNmBlnzrWIyxjMn6TA_T8HRNChRy555xW5m9aJISKqHopPCayThqrv7r8N8UsCud395ZofTImWfz6_50qoj2_uu4x094euHUobVpzPK6qcSqdq0BZnwXD8-qI6DXufACT_tHwc8zGvrp=s459-no?authuser=0",
-    //     "link": "",
-    //     "tag": "tag2"
-    // },
-    // {
-    //     "title": "HTTP-store with Angular & RXJS",
-    //     "description": "Robin van Tienhoven",
-    //     "image": "https://lh3.googleusercontent.com/_OSqgtY6gMyvlZWAdsH9KH_oUeRvshlYN5O_CViAvnrZr1d095q-97XviSY9_aL06O3dvmv4EKo0p4-YDt-BDl4FQTlOdbcx6i8KHI1pso7IDdYUwq704OP07W1Fciu8MB8b2Nt-Iko0kWIBsTlJevijUbZ-UapKKVU_bdYvF494Uo4Fb0039LQdlc6UqSoUSMT57yBRJxPCgHmk21XaOSrQmjHUiU9zrBzVbnQCbHTHsB7boYVBGqQgV2bVtOXQhnnYyU34eWTUQ3qh_kIEH76LGW4a2E2c7BCwgAlG8unkhp96wwQsL_SznYK9GzelEIdeD53kAJOuLA9BkDexNDU7QaicLr68uktCOCjuRRWMq15UxixleYLQQbJdB_lyMVmZm7TUbyeMZ5h3LfCmlAlLyhey-_T9QkMKF6YHwb0CgTNAnwqjf1ib5mNLeP5zgb9Vky5WHnGKgvSZ0iUTJJDpxgUOvFhuVO59OATwqufAdhoS-lghjgfMK1WitNJAaRk_mAwUezyIkV22avE1xTZFph86C8eFAIIFMBQyqfoJcaIEMMtxWkpwaLpUsfs959cvM96dx-J0ZiR64kUifiDfhMzMBIFKmr5hsd3Cw8YXjvDyTHGKJtnOMjW2_W593tMLlVaufW_GhcSqw12u7yPNUCs-k-yE1EK796KknuD91DwkqJ1h7x16syh4=s459-no?authuser=0",
-    //     "link": "",
-    //     "tag": "tag1"
-    // },
-    // {
-    //     "title": "Monitor residential climate with Raspberry Pi",
-    //     "description": "Pim Hazebroek",
-    //     "image": "https://lh3.googleusercontent.com/xw3iBOfTcYa4Pq110tZa3f1LLHP5k3oJOqeiWZypTJmNhk7u9c1POdaqrCU8g7bSkg64mdK82dgNpEzc8yc4mEmbuj1rJmf2Gr_KhMhKpmytrr4mi-Q61AzvL_WMLO_MZzQBhhL9bYRcyYfTFn-7Y9tLC3SiignHO0mRJgPA2K0cybuCfph690dWXmC5yzulsrOsJMBbzXaYe5av1gWX8gUp4NQvWMZbZKZqUzRKez0LmJcOUPc45J_AXVF4v4Y_P6_on6lYh5V1FzeSQJ3eCM9ou3nGvIt2Ii9kVDc6F-qaaM3O79FATGW5szOGKr8XJ6h3_YPRcz9GXFO7D8_rR2X7cmOjwKVAWQgAC9kXsofp7CLNA8Q67iauA7vI9HY1IH5lec4hXrwAjYDWx5TTDnOt8-1pXiNaeUSt2SQXQaoWUaWW0PKhF5wqfl7_KekChlCCXwD5zDKed21g24owcZjE9syJ35-kXBp-0_ipbDrAHMohugq9iXKSLhNyc0pfHnaRqz5QGD0MtALCQ-5mA-n1zbfxzydmj6ZZ8W262TdgPjq3rPdDdZ481u9sAEuguDchG0alIoZhdD0w38KYirr7EoZZNWcTkkzr7Bdy2X50QTZWDWmmtcjTL0vGaEYcn6JmZ5tKGMyPYddW6_2qUacvqeIAMO4KjEQo3RuqHhIPHINCpkaMEv8pkejK=s459-no?authuser=0",
-    //     "link": "",
-    //     "tag": "tag2"
-    // }
-
-    ],
-    width: window.innerWidth,
-    coverwidth: 180,
-    coverheight: 150,
-    covergap: 120,
-    coveroffset: -20,
-    coverangle: 30,
-    fixedsize: true,
-    textoffset: 50,
-    backgroundcolor: '333333',
-    backgroundopacity: 1,
-    mousewheel: false,
-
-});
-
-coverflow('container').on('ready', function() {
-    window.addEventListener("resize", function() {
-        coverflow('container').resize(window.innerWidth, 270);
-    });
-
-    coverflow('container').on('click', function(index, link) {
 
 
-
-        let ifrm = document.getElementById('popup-frame');
-        let ifrDoc = ifrm.contentDocument;
-
-        let articleData = this.config.playlist[index];
-        console.log(articleData.link);
-
-        let title = ifrDoc.getElementById("title");
-        title.textContent = articleData.title;
-
-        let author = ifrDoc.getElementById("author");
-        author.textContent = articleData.description;
-
-        let content = ifrDoc.getElementById("popup-content");
-        let coverimage = ifrDoc.getElementById("cover-image");
-        let covercontainer = ifrDoc.getElementById("cover-container");
-
-        covercontainer.style.backgroundImage = "url(" + this.config.playlist[index].image + ")";
-
-
-
-        //popup
-        let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
-        let pos = clicked_cover.getBoundingClientRect();
-
-
-        let popup = document.getElementById("popup")
-        popup.showpopup();
-
-        popup.style.top = pos.top + window.scrollY + "px";
-
-        popup.style.height = pos.height + "px";
-        popup.style.width = pos.width + window.scrollX + "px";
-
-
-
-        // open(link,'_self');
-    });
-});
-
-let popup = document.getElementById("popup")
-popup.showpopup = function() {
-    popup.classList.add("open");
-
-    document.getElementById('overlay').style.visibility = "visible";
-    document.getElementById('overlay').style.pointerEvents = "auto";
-
-
-    document.getElementById('overlay').style.opacity = 1;
-
+    coverflowSetup(articleList);
 }
 
 
-document.body.onmousedown = function() {
-    console.log("click");
+function coverflowSetup(playlist) {
 
-    if (document.getElementById('overlay').style.visibility == "visible") {
-        document.getElementById('overlay').style.opacity = 0;
-        document.getElementById('overlay').style.visibility = "hidden";
+    coverflow('container').setup({
+        item: 0,
+        playlist: playlist,
+        width: window.innerWidth,
+        coverwidth: 180,
+        coverheight: 150,
+        covergap: 120,
+        coveroffset: -20,
+        coverangle: 30,
+        fixedsize: true,
+        textoffset: 50,
+        backgroundcolor: '333333',
+        backgroundopacity: 1,
+        mousewheel: false,
 
-        document.getElementById('popup').classList.remove("open");
+    });
+
+    coverflow('container').on('ready', function() {
+        window.addEventListener("resize", function() {
+            coverflow('container').resize(window.innerWidth, 270);
+        });
+
+        coverflow('container').on('click', function(index, link) {
+
+
+
+            let ifrm = document.getElementById('popup-frame');
+            let ifrDoc = ifrm.contentDocument;
+
+            let articleData = this.config.playlist[index];
+            console.log(articleData.link);
+
+            let title = ifrDoc.getElementById("title");
+            title.textContent = articleData.title;
+
+            let author = ifrDoc.getElementById("author");
+            author.textContent = articleData.description;
+
+            let button = ifrDoc.getElementById("articleButton");
+            button.href = this.config.playlist[index].link;
+
+            let content = ifrDoc.getElementById("popup-content");
+            let coverimage = ifrDoc.getElementById("cover-image");
+            let covercontainer = ifrDoc.getElementById("cover-container");
+
+            covercontainer.style.backgroundImage = "url(" + this.config.playlist[index].image + ")";
+
+
+
+            //popup
+            let clicked_cover = container.getElementsByClassName("coverflow-hit")[index];
+            let pos = clicked_cover.getBoundingClientRect();
+
+
+            let popup = document.getElementById("popup")
+            popup.showpopup();
+
+            popup.style.top = pos.top + window.scrollY + "px";
+
+            popup.style.height = pos.height + "px";
+            popup.style.width = pos.width + window.scrollX + "px";
+
+
+
+            //open(link, '_self');
+        });
+    });
+
+    let popup = document.getElementById("popup")
+    popup.showpopup = function() {
+        popup.classList.add("open");
+
+        document.getElementById('overlay').style.visibility = "visible";
+        document.getElementById('overlay').style.pointerEvents = "auto";
+
+
+        document.getElementById('overlay').style.opacity = 1;
+
     }
 
+
+    document.body.onmousedown = function() {
+        console.log("click");
+
+        if (document.getElementById('overlay').style.visibility == "visible") {
+            document.getElementById('overlay').style.opacity = 0;
+            document.getElementById('overlay').style.visibility = "hidden";
+
+            document.getElementById('popup').classList.remove("open");
+        }
+
+    };
+
 };
+
+
+
+
+
 
 
 
