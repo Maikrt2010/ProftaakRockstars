@@ -42,9 +42,7 @@ namespace Api
             {
                 options.AddDefaultPolicy(builder =>
                {
-                   builder.WithOrigins("http://127.0.0.1:5500")
-                   .WithHeaders("Authorization")
-                   .AllowCredentials();
+                   builder.WithOrigins("*").AllowAnyHeader();
                });
             });
 

@@ -39,7 +39,7 @@ namespace Api.Controllers
 
         // GET api/article/5
         [HttpGet("{id}")]
-        //[EnableCors("Policy1")]
+        //[EnableCors("PolicyGET")]
         public IActionResult GetArticle(int id)
         {
             var article = _articleCollection.GetArticle(id);
@@ -52,7 +52,6 @@ namespace Api.Controllers
 
         // POST api/article
         [HttpPost]
-        //[EnableCors("Policy1")]
         public IActionResult PostNewArticle(ArticleModel article)
         {
             if (!ModelState.IsValid)
