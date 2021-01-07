@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-top: 58px;
+    margin-top: 58.5px;
     top: 0;
     left: 0;
     background: black;
@@ -39,31 +39,7 @@
 }
 
 
-.nav-area{
-    background: rgba(0, 0, 0, 0.9);
-    height: 56px;
-    position: absolute;
-    width: 100%;
-    z-index: 2; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-.logo{
-    margin: 0 50px;
-    height: 60px;
-    float: left;
-    color:#fff;
-    font-size: 35px;
-    text-transform: capitalize;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo span{
-    color:#f5bb00;
-}
 
 .menu-area{
     float: right;
@@ -159,7 +135,7 @@
     /* justify-content: space-around; */
     margin-top: 0;
     z-index: 12;
-    background: rgba(0, 0, 0, 0.9);
+    background:  rgba(35, 35, 35, 0.9)
 }
 
 .navbar>li {
