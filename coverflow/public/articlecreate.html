@@ -28,11 +28,10 @@
     </div>
 
     <form class="containerinput" id="my-form">
-        <h2>Vul hier de titel van uw artikel in:</h2>
-        <input type="text" id="title" name="Title" placeholder="Titel">
-        <h2>Vul hier uw naam in:</h2>
-        <input type="text" id="author" name="Author" placeholder="Auteur"><br><br><br>
-
+        <h3>Vul hier de titel van uw artikel in:</h3>
+        <input type="text" id="articleTitle" name="Title" placeholder="Titel">
+        <h3>Vul hier uw naam in:</h3>
+        <input type="text" id="author" name="Author" placeholder="Auteur">
         <textarea type="text" id="texteditor" name="Content"></textarea><br>
         <button id="buttonsubmit" type="submit" class="block">Post Data</button>
     </form>
@@ -49,12 +48,11 @@
     <script>
         tinymce.init({
             selector: "#texteditor",
-            plugins: 'autoresize, image code, media',
+            plugins: 'autoresize, image code',
             menubar: false,
             theme_advanced_blockformats: 'h2,h3,p',
-            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image| removeformat",
-            placeholder: "Typ hier uw artikel ...",
-            media_alt_source: false
+            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image | removeformat | media",
+            placeholder: "Typ hier uw artikel ..."
         });
     </script>
 
@@ -65,9 +63,9 @@
                 var f = $(this).parents("my-form");
                 var action = f.attr("action");
                 var serializedForm = f.serializeArray();
-                let title = $("#title").serializeArray()[0]["value"];
+                let title = $("#articleTitle").serializeArray()[0]["value"];
                 let author = $("#author").serializeArray()[0]["value"];
-                console.log(content)
+                console.log(content);
 
 
 
@@ -78,7 +76,6 @@
                     "title": title,
                     "content": content,
                     "author": author,
-
                 });
 
                 var requestOptions = {
