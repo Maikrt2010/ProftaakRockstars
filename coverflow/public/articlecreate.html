@@ -11,10 +11,10 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/article.css">
-    <link rel="stylesheet" href="../css/tags.css">
+    <!-- <link rel="stylesheet" href="../css/tags.css"> -->
 
     <script src="../js/components.js" defer></script>
-    <script src="../js/tags.js" defer></script>
+    <!-- <script src="../js/tags.js" defer></script> -->
     <div id="hero"></div>
 
 </head>
@@ -62,8 +62,15 @@
                 let content = $('#texteditor').html(tinymce.get('texteditor').getContent())[0].defaultValue;
                 var f = $(this).parents("my-form");
                 var action = f.attr("action");
+
                 var serializedForm = f.serializeArray();
+<<<<<<< HEAD
                 let title = $("#articleTitle").serializeArray()[0]["value"];
+=======
+                let title = $("#title").serializeArray()[0]["value"];
+                console.log("adsfkljadsfkjdlasfjlksdfjlksdjaflkjdasfl");
+                console.log($("#title").serializeArray());
+>>>>>>> 082f4ce56fb46c80e480b270c435bb1dadc339df
                 let author = $("#author").serializeArray()[0]["value"];
                 console.log(content);
 
