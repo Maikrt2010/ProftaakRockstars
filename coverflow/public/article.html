@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Article editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/tags.css">
+
+    <script src="../js/components.js" defer></script>
+    <div id="hero"></div>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <h1 style="text-align:center; font-size: 2.5rem" id="titleData"></h1>
+    <h2 style="text-align:center" id="authorData"></h2>
+    <p style="margin-left: 30%; margin-right: 30%" id="articleData"></p><br><br>
+
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('article')
+        $.ajax({
+            url: 'http://localhost:5001/api/Article/' + id,
+            method: 'GET',
+            dataType: 'json',
+
+            success: function(data, textStatus, jQxhr) {
+                console.log(data);
+                document.getElementById("titleData").innerHTML = data.title;
+                document.getElementById("authorData").innerHTML = data.author;
+                document.getElementById("articleData").innerHTML = data.content;
+            },
+        });
+    </script>
+
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>

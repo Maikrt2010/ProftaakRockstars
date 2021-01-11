@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Article editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.tiny.cloud/1/x5qtbwjjub75e8k47llgn2qnoctqja5ugz2qlr5cn7ctcj3p/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+   
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/tags.css">
+
+    <script src="../js/components.js" defer></script>
+    <script src="../js/tags.js" defer></script>
+    <div id="hero"></div>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="titlemake">
+        <br>
+        <h1>Een nieuw artikel maken</h1><br>
+    </div>
+
+    <form class="containerinput" id="my-form">
+        <h3>Vul hier de titel van uw artikel in:</h3>
+        <input type="text" id="title" name="Title" placeholder="Titel">
+        <h3>Vul hier uw naam in:</h3>
+        <input type="text" id="author" name="Author" placeholder="Auteur">
+        <h3>Voeg hier tags toe:</h3>
+        <input type="text" id="tag-input" name="Tag" placeholder="Tags"><br>
+        <textarea type="text" id="texteditor" name="Content"></textarea><br>
+        <button id="buttonsubmit" type="submit" class="block">Post Data</button>
+    </form>
+    <h1 id="titleData"></h1>
+    <h2 id="authorData"></h2>
+    <div id="articleData">
+
+    </div>
+
+
+
+
+
+    <script>
+        tinymce.init({
+            selector: "#texteditor",
+            plugins: 'autoresize, image code',
+            menubar: false,
+            theme_advanced_blockformats: 'h2,h3,p',
+            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image",
+            placeholder: "Typ hier uw artikel ..."
+        });
+    </script>
+
+    <script>
+        (function($) {
+            function processForm(e) {
+                let content = $('#texteditor').html(tinymce.get('texteditor').getContent())[0].defaultValue;
+                var f = $(this).parents("my-form");
+                var action = f.attr("action");
+                var serializedForm = f.serializeArray();
+                let title = $("#title").serializeArray()[0]["value"];
+                let author = $("#author").serializeArray()[0]["value"];
+                console.log(content)
+
+
+
+                var myHeaders = new Headers();
+                myHeaders.append("Content-Type", "application/json");
+
+                var raw = JSON.stringify({
+                    "title": title,
+                    "content": content,
+                    "author": author,
+
+                });
+
+                var requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    body: raw
+                };
+
+                fetch("http://localhost:5001/api/Article/", requestOptions)
+                    .then(response => response.text())
+                    .then(result => console.log("successful post"))
+                    .catch(error => console.log('error', error));
+
+                // $.ajax({
+                //     url:'https://localhost:5001/api/Article',
+                //     dataType: 'text',
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data: $("#my-form").serialize(),
+                //     //data: $('#texteditor').html( tinymce.get('texteditor').getContent() ),
+                //     headers: {
+                //         "Access-Control-Allow-Origin": "*"
+                //     },
+                //     success: function (data, textStatus, jQxhr) {
+                //         $('#response pre').html(data);
+                //     },
+                //     error: function (jqXhr, textStatus, errorThrown) {
+                //         console.log(errorThrown);
+                //     }
+                // });
+
+                e.preventDefault();
+            }
+
+            $('#my-form').submit(processForm);
+        })(jQuery);
+    </script>
+
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>

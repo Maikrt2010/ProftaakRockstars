@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ku+KRXiC1SidGt1R4kqV6mj/1aDLBzw1T+OvSz9o538dv59xzIVTmGZ4Z+RrNo0f88FzcE96PkHAwn4iz9OPHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kevin\\Documents\\GitHub\\ProftaakRockstars\\ViewFactory\\ViewFactory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kevin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
