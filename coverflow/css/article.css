@@ -1,4 +1,35 @@
 .main-text {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#titleData {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#articleData {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#authorData {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@media only screen and (max-width: 800px) {
+    #articleData {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
