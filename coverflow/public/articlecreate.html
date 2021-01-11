@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/article.css">
-    <!-- <link rel="stylesheet" href="../css/tags.css"> -->
+    <link rel="stylesheet" href="../css/tags.css">
 
     <script src="../js/components.js" defer></script>
     <!-- <script src="../js/tags.js" defer></script> -->
@@ -48,10 +48,10 @@
     <script>
         tinymce.init({
             selector: "#texteditor",
-            plugins: 'autoresize, image code',
+            plugins: 'autoresize, image code, media',
             menubar: false,
             theme_advanced_blockformats: 'h2,h3,p',
-            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image | removeformat | media",
+            toolbar: " undo redo | styleselect | bold italic underline| link | print preview media fullpage | image | removeformat",
             placeholder: "Typ hier uw artikel ..."
         });
     </script>
