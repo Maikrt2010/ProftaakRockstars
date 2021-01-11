@@ -8,5 +8,6 @@ $(function() {
     $("#hero").load("../components/hero.html");
     $("#navbar").load("../components/navbar.html");
     $("#videobar").load("../components/HomeVideo.html");
-    
+    $("#title").load("../components/title.html");
+
 });
