@@ -64,7 +64,7 @@ function createCoverItems(articles) {
 function coverflowSetup(playlist) {
 
     coverflow('container').setup({
-        item: 0,
+        item: 3,
         playlist: playlist,
         width: window.innerWidth,
         coverwidth: 180,
