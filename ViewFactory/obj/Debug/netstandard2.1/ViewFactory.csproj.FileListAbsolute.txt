@@ -1,4 +1,0 @@
-C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewFactory\obj\Debug\netstandard2.1\ViewFactory.csprojAssemblyReference.cache
-C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewFactory\obj\Debug\netstandard2.1\ViewFactory.AssemblyInfoInputs.cache
-C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewFactory\obj\Debug\netstandard2.1\ViewFactory.AssemblyInfo.cs
-C:\Users\Kevin\Documents\GitHub\ProftaakRockstars\ViewFactory\obj\Debug\netstandard2.1\ViewFactory.csproj.CoreCompileInputs.cache
