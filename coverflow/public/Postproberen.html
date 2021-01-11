@@ -71,19 +71,22 @@
 
 
                 var myHeaders = new Headers();
-                myHeaders.append("Content-Type", "application/json");
+                //myHeaders.append("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+                myHeaders.append("Content-Type", "text/plain");
+                
+                
 
                 var raw = JSON.stringify({
                     "title": title,
                     "content": content,
                     "author": author,
-
                 });
 
                 var requestOptions = {
                     method: 'POST',
                     headers: myHeaders,
-                    body: raw
+                    body: raw,
+                    mode: 'cors'
                 };
 
                 fetch("http://localhost:5001/api/Article/", requestOptions)

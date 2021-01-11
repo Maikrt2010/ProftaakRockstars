@@ -1,12 +1,10 @@
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "TOKEN");
 
 
 var requestOptions = {
     method: 'GET',
     headers: myHeaders,
     mode: 'cors',
-    credentials: 'include'
 };
 
 
